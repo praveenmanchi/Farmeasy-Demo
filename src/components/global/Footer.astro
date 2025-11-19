@@ -1,0 +1,193 @@
+---
+// Assets
+import Logo from "@/components/assets/Logo.astro";
+// Fundations
+import Text from "@/components/fundations/elements/Text.astro";
+import Wrapper from "@/components/fundations/containers/Wrapper.astro";
+// Content
+import { getCollection } from "astro:content";
+const currentYear = new Date().getFullYear();
+// Dynamically load practice areas
+const practiceAreasData = await getCollection("practice");
+const practiceAreas = practiceAreasData
+  .sort((a, b) => a.data.title.localeCompare(b.data.title))
+  .slice(0, 6) // Limit to 6 for footer
+  .map((practice) => ({
+    text: practice.data.title,
+    href: `/practice-areas/${practice.slug}`,
+  }));
+
+const quickLinks = [
+  { text: "About Us", href: "/team" },
+  { text: "Practice Areas", href: "/practice-areas" },
+  { text: "Cases", href: "/cases" },
+  { text: "Careers", href: "/careers" },
+  { text: "Press & Media", href: "/press-and-media" },
+  { text: "Contact", href: "/contact" },
+  { text: "Free Consultation", href: "/free-consultation" },
+];
+// Unified link sections to render with a single template
+const linkSections = [
+  {
+    title: "Quick Links",
+    items: quickLinks,
+  },
+  {
+    title: "Practice Areas",
+    items: practiceAreas,
+  },
+];
+const officeLocations = [
+{
+    name: "FarmEasy — Headquarters",
+    address: "3400 COTTAGE WAY, STE G2 #32168",
+    city: "SACRAMENTO, CA 95825",
+    phone: "", // leave empty if you don't want to display a phone number
+  },
+  {
+    name: "FarmEasy — Inida",
+    address: "3400 COTTAGE WAY, STE G2 #32168",
+    city: "Jangareddyguda, Andhra Pradesh, India",
+    phone: "", // leave empty if you don't want to display a phone number
+  },
+];
+const socialLinks = [
+  { name: "LinkedIn", href: "#" },
+  { name: "Twitter", href: "#" },
+  { name: "Facebook", href: "#" },
+];
+---
+
+<footer class="bg-base-50">
+  <Wrapper variant="standard" class="py-16">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-8">
+      <div class="col-span-full md:col-span-1">
+        <Logo class="text-accent-800 h-4" />
+        <Text
+          tag="p"
+          variant="textXS"
+          class="text-base-600 mt-5 leading-relaxed"
+        >
+        Empowering Farmers With Simple, Smart, and Sustainable Technology.
+        FarmEasy is built on a simple belief: farmers deserve technology that
+        works for them — not the other way around. We design solar-powered
+        IoT systems that help farmers monitor their land, track environmental
+        conditions, and automate essential tasks with ease. Whether it’s a
+        small family farm or a large agricultural operation, FarmEasy makes
+        remote farm management reliable, affordable, and effortless.
+        </Text>
+        <div class="flex flex-col gap-4 text-xs mt-8">
+          {
+            socialLinks.map((social) => (
+              <a
+                href={social.href}
+                class="text-base-600 hover:text-accent-800 transition-colors"
+                aria-label={social.name}
+              >
+                {social.name}
+              </a>
+            ))
+          }
+        </div>
+      </div>
+      {
+        linkSections.map((section) => (
+          <div>
+            <Text tag="h3" variant="textXS" class="text-secondary-500">
+              {section.title}
+            </Text>
+            <ul class="flex flex-col gap-1 mt-4">
+              {section.items.map((item) => (
+                <li>
+                  <a
+                    href={item.href}
+                    class="text-base-600 hover:text-accent-800 transition-colors text-xs"
+                  >
+                    {item.text}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+      <div class="col-span-full md:col-span-1">
+        <Text tag="h3" variant="textXS" class="text-secondary-500">
+          Contact Us
+        </Text>
+        <div class="grid grid-cols-2 md:grid-cols-1 gap-y-12 mt-4">
+          {
+            officeLocations.map((office) => (
+              <div class="text-base-600">
+                <Text
+                  tag="p"
+                  variant="textXS"
+                  class="font-medium text-accent-800"
+                >
+                  {office.name}
+                </Text>
+                <Text tag="p" variant="textXS" class="mt-1">
+                  {office.address}
+                </Text>
+                <Text tag="p" variant="textXS" class="mt-1">
+                  {office.city}
+                </Text>
+                <a
+                  href={`tel:${office.phone}`}
+                  class=" hover:text-accent-800 text-base-600 transition-colors text-xs flex mt-4"
+                >
+                  {office.phone}
+                </a>
+              </div>
+            ))
+          }
+        </div>
+        <a
+          href="mailto:info@farmeasy.in"
+          class="text-accent-800 hover:text-accent-300 text-sm transition-colors flex mt-12"
+        >
+          info@farmeasy.in
+        </a>
+      </div>
+    </div>
+    <div class="border-t border-base-100 pt-8">
+      <div
+        class="flex flex-col md:flex-row justify-between lg:items-center gap-4"
+      >
+        <div class="text-base-600 text-sm">
+          <Text tag="p" variant="textXS">
+            © {currentYear} FarmEasy. All rights reserved.
+          </Text>
+        </div>
+        <div class="flex flex-col md:flex-row gap-4 text-base-600 text-xs">
+          <a
+            href="/infopages/privacy"
+            class="hover:text-accent-800 transition-colors"
+          >
+            Privacy Policy
+          </a>
+          <span class="hidden md:inline">•</span>
+          <a
+            href="/infopages/terms"
+            class="hover:text-accent-800 transition-colors"
+          >
+            Terms of Service
+          </a>
+        </div>
+      </div>
+      <div class="mt-6 pt-6 border-t border-base-100">
+        <Text tag="p" variant="textXS" class="text-base-600 leading-relaxed">
+          The information provided on this website is for general informational
+          purposes only and does not constitute professional agricultural,
+          technical, or safety advice. FarmEasy’s products and services are
+          intended to assist with environmental monitoring and farm automation;
+          performance will vary depending on site conditions, installation,
+          and maintenance. Follow local regulations and best agronomic
+          practices. For operation-specific guidance, consult a qualified
+          agronomist or farm systems professional. By using this site, you
+          acknowledge and accept these terms.
+        </Text>
+      </div>
+    </div>
+  </Wrapper>
+</footer>
