@@ -9,6 +9,8 @@ const {
   class: className,
   ...rest
 } = Astro.props;
+const { href, ...otherProps } = rest;
+const shouldRenderAsLink = isLink || typeof href === "string";
 const defaultClass = [
   "text-white",
   "bg-accent-800",
@@ -81,9 +83,9 @@ const baseClass = [
 ---
 
 {
-  isLink ? (
+  shouldRenderAsLink ? (
     <a
-      href={rest.href}
+      href={href ?? "#"}
       class:list={[
         ...baseClass,
         ...(variantClass[variant] || []),
@@ -91,7 +93,7 @@ const baseClass = [
         ...gapClass,
         ...additionalClasses,
       ]}
-      {...rest}
+      {...otherProps}
     >
       {iconOnly ? (
         <slot name="icon" />
@@ -112,7 +114,7 @@ const baseClass = [
         ...gapClass,
         ...additionalClasses,
       ]}
-      {...rest}
+      {...otherProps}
     >
       {iconOnly ? (
         <slot name="icon" />

@@ -1,8 +1,8 @@
 ---
 // Assets
 import { Image } from "astro:assets";
-import approach from "@/images/assets/approach.png";
-import customer from "@/images/assets/customer.png";
+import farmIotField from "@/images/assets/farm-iot-field.jpg";
+import greenhouseTech from "@/images/assets/greenhouse-tech.jpg";
 // Fundations
 import Text from "@/components/fundations/elements/Text.astro";
 import Button from "@/components/fundations/elements/Button.astro";
@@ -10,43 +10,43 @@ import Wrapper from "@/components/fundations/containers/Wrapper.astro";
 
 const approachSteps = [
   {
-    title: "Strategic Case Planning",
+    title: "Farm Assessment",
     description:
-      "Align client objectives, develop innovative legal strategies, and craft a clear roadmap for success with our meticulous case planning process.",
+      "Analyze your farm's unique needs, evaluate current operations, and design a customized IoT deployment plan that aligns with your agricultural goals.",
     bullets: [
-      "Align legal strategy with client goals",
-      "Foster innovation in case approach",
-      "Craft a detailed litigation or negotiation roadmap",
+      "Comprehensive site evaluation and needs analysis",
+      "Custom sensor placement planning",
+      "Integration roadmap with existing farm systems",
     ],
   },
   {
-    title: "Consulting Excellence",
+    title: "System Installation",
     description:
-      "Address legal challenges with personalized solutions. Our consulting process delivers expertise, collaboration, and client-centric strategies for success.",
+      "Deploy solar-powered IoT nodes and sensors across your fields. Our expert technicians ensure optimal placement for maximum coverage and reliability.",
     bullets: [
-      "Personalized solutions for legal challenges",
-      "Client-centric and collaborative approach",
-      "Expertise-driven legal consulting",
+      "Professional installation of solar IoT hardware",
+      "Network connectivity setup and testing",
+      "Calibration for local soil and climate conditions",
     ],
   },
   {
-    title: "Advocacy & Representation",
+    title: "Data Integration",
     description:
-      "Advocate for clients, build strong cases, and capitalize on opportunities with our dynamic representation process.",
+      "Connect your sensors to our secure cloud platform and configure real-time dashboards that deliver actionable insights for precision agriculture.",
     bullets: [
-      "Vigorous advocacy in negotiations and court",
-      "Build strong, evidence-based cases",
-      "Capitalize on legal opportunities",
+      "Cloud platform setup and data synchronization",
+      "Custom dashboard configuration",
+      "Mobile app access for on-the-go monitoring",
     ],
   },
   {
-    title: "Precision Monitoring",
+    title: "Ongoing Support",
     description:
-      "Utilize real-time case analytics, continuous improvement initiatives, and ensure operational excellence with our precision monitoring process.",
+      "Benefit from continuous monitoring, system optimization, and expert agricultural guidance to maximize your farm's productivity and sustainability.",
     bullets: [
-      "Real-time analytics for case insights",
-      "Continuous improvement in legal processes",
-      "Ensure operational excellence for clients",
+      "24/7 system monitoring and alerts",
+      "Regular firmware updates and improvements",
+      "Dedicated agronomic support team",
     ],
   },
 ];
@@ -58,10 +58,10 @@ const approachSteps = [
       <div>
         <div class="relative w-full lg:sticky lg:top-16 lg:h-screen">
           <Image
-            src={customer}
+            src={farmIotField}
             width={1440}
             height={900}
-            alt="Carrington Law - Our Approach"
+            alt="FarmEasy - Modern farm with IoT sensors and solar technology"
             class="object-cover object-center w-full h-full bg-base-50"
             loading="eager"
             decoding="async"
@@ -75,41 +75,34 @@ const approachSteps = [
                 variant="textXS"
                 class="text-secondary-400 tracking-wide uppercase"
               >
-                our way
+                How It Works
               </Text>
               <Text
                 tag="h2"
                 variant="displayLG"
                 class="text-white font-display text-balance mt-12"
               >
-                Our Approach
+                Our Implementation Process
               </Text>
               <Text tag="p" variant="textSM" class="text-base-300 mt-2">
-                Every case is unique, and so is our approach. We combine deep
-                legal expertise with innovative strategies, cutting-edge
-                technology, and a relentless focus on results. Whether you're a
-                business facing complex challenges or an individual seeking
-                justice, we provide personalized attention and dedicated
-                advocacy.
+                Every farm is unique, and so is our approach. We combine agricultural expertise with cutting-edge IoT technology and solar power solutions. Whether you're managing a small family farm or large-scale operations, we provide personalized implementation and dedicated support.
               </Text>
               <div
                 class="mt-12 grid grid-cols-1 overflow-hidden lg:grid-cols-2 bg-white/5 backdrop-blur-sm"
               >
                 <Image
-                  src={customer}
+                  src={greenhouseTech}
                   width={500}
                   height={500}
                   loading="eager"
                   decoding="async"
-                  alt="Customer testimonial — Alex Rivera"
+                  alt="Smart agriculture greenhouse with monitoring technology"
                   class="object-cover h-60 size-full object-top"
                 />
                 <figure class="p-4 flex flex-col h-full justify-between">
                   <blockquote>
                     <Text tag="p" variant="textSM" class="text-base-300 italic">
-                      “Carrington guided us through a complex dispute with
-                      clarity and confidence. We always knew our options and
-                      felt genuinely supported.”
+                      "FarmEasy transformed our irrigation management. Real-time soil moisture data helped us reduce water usage by 35% while improving crop yields."
                     </Text>
                   </blockquote>
                   <figcaption class="mt-3 flex items-center gap-3">
@@ -118,9 +111,9 @@ const approachSteps = [
                       variant="textXS"
                       class="text-secondary-300 font-medium"
                     >
-                      Alex Rivera, COO,
+                      Sarah Chen, Owner,
                       <br />
-                      Northshore Holdings
+                      Green Valley Orchards
                     </Text>
                   </figcaption>
                 </figure>
@@ -130,57 +123,73 @@ const approachSteps = [
         </div>
       </div>
       <div class="p-8 lg:p-20 bg-base-50">
-        <dl class="flex flex-col gap-8">
+        <ul class="space-y-12 pt-2">
           {
             approachSteps.map((step, idx) => (
-              <>
-                <div class="bg-white  p-8 flex flex-col items-start sticky top-8 lg:top-20">
-                  <dt>
-                    <Text
-                      tag="p"
-                      variant="displayXL"
-                      class="text-accent-800 font-display italic font-medium"
-                    >
-                      {idx + 1}
-                    </Text>
-                    <Text
-                      tag="h3"
-                      variant="displaySM"
-                      class="text-base-800 font-display mt-12"
-                    >
-                      {step.title}
-                    </Text>
-                  </dt>
-                  <dd>
-                    <Text
-                      tag="p"
-                      variant="textSM"
-                      class="text-base-600 text-balance"
-                    >
-                      {step.description}
-                    </Text>
-                    <ul class="list-disc  space-y-1 list-inside mt-4 pt-4 border-t border-base-100">
-                      {step.bullets.map((bullet) => (
-                        <li class="text-base-600 text-sm">{bullet}</li>
-                      ))}
-                    </ul>
-                  </dd>
-                </div>
-              </>
+              <li class="flex flex-col">
+                <Text
+                  tag="p"
+                  variant="textXS"
+                  class="text-secondary-500 tracking-wider uppercase font-bold"
+                >
+                  Step {idx + 1}
+                </Text>
+                <Text
+                  tag="h3"
+                  variant="displaySM"
+                  class="text-accent-800 font-display mt-4"
+                >
+                  {step.title}
+                </Text>
+                <Text tag="p" variant="textBase" class="text-base-700 mt-2">
+                  {step.description}
+                </Text>
+                <ul class="mt-3 space-y-1 list-inside list-disc">
+                  {step.bullets.map((bullet) => (
+                    <li>
+                      <Text
+                        tag="span"
+                        variant="textSM"
+                        class="text-base-600 font-medium"
+                      >
+                        {bullet}
+                      </Text>
+                    </li>
+                  ))}
+                </ul>
+              </li>
             ))
           }
-        </dl>
-        <div class="mt-4 pt-4 border-t border-base-200">
-          <Text tag="p" variant="textSM" class="text-base-700 lg:w-1/2">
-            Ready to experience legal representation that puts your interests
-            first?
+        </ul>
+        <div class="pt-12 border-t border-base-200 mt-12">
+          <Text
+            tag="h3"
+            variant="displaySM"
+            class="text-accent-800 font-display"
+          >
+            Ready to modernize your farm?
           </Text>
-          <div class="flex items-center gap-2 flex-col lg:flex-row mt-4">
-            <Button variant="default" size="xs" class="w-full lg:w-fit">
+          <Text tag="p" variant="textSM" class="text-base-600 mt-1">
+            Schedule a free consultation to discuss your agricultural automation needs.
+          </Text>
+          <div class="flex flex-col sm:flex-row gap-2 mt-6">
+            <Button
+              isLink={true}
+              href="/contact"
+              variant="default"
+              size="sm"
+              class="w-full sm:w-fit"
+            >
               Schedule Consultation
             </Button>
-            <Button variant="muted" size="xs" class="w-full lg:w-fit">
-              Learn more about us
+            <Button
+              isLink={true}
+              variant="muted"
+              size="sm"
+              href="/products"
+              class="w-full sm:w-fit"
+            >
+              Explore Products
             </Button>
           </div>
         </div>

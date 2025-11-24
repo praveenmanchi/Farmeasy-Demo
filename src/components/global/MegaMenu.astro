@@ -1,7 +1,7 @@
 ---
 // Assets
 import { Image } from "astro:assets";
-import HeroImage from "@/images/assets/heroImage.png";
+import HeroImage from "@/images/assets/megamenu-hero.jpg";
 
 // Fundations
 import Text from "@/components/fundations/elements/Text.astro";
@@ -9,48 +9,36 @@ import Wrapper from "@/components/fundations/containers/Wrapper.astro";
 const { inverted = true } = Astro.props;
 const triggerColor = inverted ? "text-white" : "text-base-800";
 const exploreLinks = [
-  {
-    label: "Practice Areas",
-    href: "/practice-areas",
-  },
-  { label: "Cases", href: "/cases" },
-  { label: "Our Attorneys", href: "/team" },
-  { label: "Journal", href: "/blog" },
+  { label: "Products", href: "/#products" },
+  { label: "Smart Sensor Monitoring", href: "/products/smart-sensor-monitoring" },
+  { label: "Off-Grid Solar Nodes", href: "/products/off-grid-solar-nodes" },
+  { label: "Secure Dashboards", href: "/products/secure-dashboards" },
+  { label: "Agricultural Solutions", href: "/practice-areas" },
+  { label: "Success Stories", href: "/cases" },
+  { label: "Our Team", href: "/team" },
+  { label: "Blog", href: "/blog" },
   { label: "Careers", href: "/careers" },
-  {
-    label: "Press & Media",
-    href: "/press-and-media",
-  },
-  { label: "Offices", href: "/offices" },
+  { label: "Press & Media", href: "/press-and-media" },
   { label: "Contact", href: "/contact" },
-  {
-    label: "Free Consultation",
-    href: "/free-consultation",
-  },
-  {
-    label: "Press Releases",
-    href: "/press-releases",
-  },
-  { label: "Testimonials", href: "/testimonials" },
-  { label: "Newsletter", href: "/newsletter" },
+  { label: "Free Consultation", href: "/free-consultation" },
 ];
 const posts = [
   {
-    title: "Latest Blog Post",
+    title: "Precision Agriculture with IoT",
     slug: "1",
-    description: "Insights and updates from our team.",
+    description: "How smart sensors transform farm operations.",
   },
   {
-    title: "Second Blog Post",
+    title: "Solar Power for Remote Farms",
     slug: "2",
-    description: "More news and legal commentary.",
+    description: "Off-grid solutions for sustainable farming.",
   },
 ];
 const featuredCase = {
-  title: "Acme Acquires Beta",
-  slug: "acme-acquires-beta",
-  summary: "A major acquisition handled by our firm.",
-  category: "Corporate Law",
+  title: "Green Valley Orchards",
+  slug: "green-valley-orchards-water-reduction",
+  summary: "35% water reduction while improving crop yields through real-time soil monitoring.",
+  category: "Irrigation Automation",
 };
 ---
 
@@ -94,8 +82,8 @@ const featuredCase = {
                 src={HeroImage}
                 width={600}
                 height={600}
-                alt="Carrington Law - Professional Legal Services"
-                class="object-cover object-top w-full h-40 rounded-lg"
+                alt="FarmEasy - Agricultural IoT Solutions"
+                class="object-cover object-center w-full h-40 rounded-lg"
                 loading="eager"
                 decoding="async"
               />
@@ -104,28 +92,25 @@ const featuredCase = {
                 variant="textXL"
                 class="font-display text-white mt-4"
               >
-                About Carrington Law
+                About FarmEasy
               </Text>
               <Text tag="p" variant="textSM" class="text-base-600 mt-2">
-                Carrington Law is dedicated to providing strategic legal counsel
-                and unwavering advocacy for our clients. With decades of
-                experience, our team delivers results-driven solutions for
-                businesses and individuals facing complex legal challenges.
+                FarmEasy provides solar-powered IoT solutions for precision agriculture. Our advanced sensor networks and automation systems help farmers optimize water usage, monitor crop health, and increase yields sustainably.
               </Text>
               <div
                 class="w-full mt-4 pt-4 border-t border-white/10 space-y-2 flex flex-col"
               >
                 <a
-                  href="mailto:carrington@example.com"
+                  href="mailto:info@farmeasy.ag"
                   class="text-base-300 hover:text-white transition-colors text-xs"
                 >
-                  carrington@example.com
+                  info@farmeasy.ag
                 </a>
                 <a
-                  href="tel:+15551234567"
+                  href="tel:+18005551234"
                   class="text-base-300 hover:text-white transition-colors text-xs"
                 >
-                  (555) 123-4567
+                  (800) 555-1234
                 </a>
                 <a
                   href="/contact"

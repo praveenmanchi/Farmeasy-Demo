@@ -3,8 +3,26 @@ import tailwindcss from '@tailwindcss/vite';
 import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
+  server: {
+    port: 5173,
+    host: '0.0.0.0'
+  },
   vite: {
     plugins: [tailwindcss()],
+    server: {
+      host: '0.0.0.0',
+      port: 5173,
+      strictPort: true,
+      allowedHosts: [
+        'localhost',
+        '.localhost',
+        '.replit.dev',
+        '.repl.co'
+      ],
+      hmr: {
+        clientPort: 5173
+      }
+    }
   },
   markdown: {
     drafts: true,

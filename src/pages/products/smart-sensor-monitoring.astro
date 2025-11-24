@@ -1,0 +1,634 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Wrapper from "@/components/fundations/containers/Wrapper.astro";
+import Text from "@/components/fundations/elements/Text.astro";
+import Button from "@/components/fundations/elements/Button.astro";
+import Cta from "@/components/global/Cta.astro";
+
+const pageTitle = "IoT Smart Hub | FarmEasy";
+const pageDescription = "The most advanced agricultural monitoring system ever created. Real-time insights, precision control, revolutionary technology.";
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .slide-in-left {
+      opacity: 0;
+      transform: translateX(-50px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .slide-in-left.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .slide-in-right {
+      opacity: 0;
+      transform: translateX(50px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .slide-in-right.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .scale-in {
+      opacity: 0;
+      transform: scale(0.9);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .scale-in.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .hero-text-reveal {
+      overflow: hidden;
+    }
+
+    .hero-text-reveal span {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(100%);
+      animation: revealText 0.8s ease forwards;
+    }
+
+    @keyframes revealText {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero-text-reveal span:nth-child(1) { animation-delay: 0.1s; }
+    .hero-text-reveal span:nth-child(2) { animation-delay: 0.2s; }
+    .hero-text-reveal span:nth-child(3) { animation-delay: 0.3s; }
+
+    .spec-card {
+      opacity: 0;
+      transform: translateY(40px) scale(0.95);
+      transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .spec-card.visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    .spec-card:nth-child(1) { transition-delay: 0.1s; }
+    .spec-card:nth-child(2) { transition-delay: 0.2s; }
+    .spec-card:nth-child(3) { transition-delay: 0.3s; }
+    .spec-card:nth-child(4) { transition-delay: 0.4s; }
+    .spec-card:nth-child(5) { transition-delay: 0.5s; }
+    .spec-card:nth-child(6) { transition-delay: 0.6s; }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .feature-grid {
+      display: grid;
+      gap: 1px;
+      background: #e5e7eb;
+      border-radius: 24px;
+      overflow: hidden;
+    }
+
+    .feature-card {
+      background: white;
+      padding: 3rem;
+      position: relative;
+      transition: background 0.3s ease;
+    }
+
+    .feature-card:hover {
+      background: #f9fafb;
+    }
+
+    @media (min-width: 768px) {
+      .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .feature-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .hero-video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      animation: fadeInVideo 1.5s ease 0.5s forwards;
+    }
+
+    @keyframes fadeInVideo {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .sticky-nav {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: translateY(-100%);
+      transition: all 0.3s ease;
+    }
+
+    .sticky-nav.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+
+  <!-- Sticky Product Nav (Hidden initially) -->
+  <div class="sticky-nav" id="product-nav">
+    <Wrapper>
+      <div class="flex items-center justify-between py-4">
+        <Text tag="h2" variant="displayXS" class="font-display">
+          IoT Smart Hub
+        </Text>
+        <div class="flex gap-4">
+          <Button href="/buy-iot-hub" variant="default" size="sm">
+            Buy Now
+          </Button>
+        </div>
+      </div>
+    </Wrapper>
+  </div>
+
+  <!-- Hero Section with Animated Reveal -->
+  <section class="relative min-h-screen flex items-center overflow-hidden bg-black">
+    <div class="absolute inset-0 bg-gradient-to-b from-black via-base-900/90 to-base-800/80"></div>
+    
+    <video
+      autoplay
+      loop
+      muted
+      playsinline
+      class="hero-video"
+    >
+      <source src="/videos/sensor-monitoring.mp4" type="video/mp4" />
+    </video>
+
+    <Wrapper>
+      <div class="relative z-10 text-center py-32">
+        <div class="hero-text-reveal mb-6">
+          <span class="inline-block px-6 py-2 bg-white/10 backdrop-blur-md text-white rounded-full text-sm font-medium border border-white/20">
+            Introducing IoT Smart Hub
+          </span>
+        </div>
+        
+        <h1 class="hero-text-reveal text-5xl lg:text-8xl font-bold text-white mb-8 tracking-tight">
+          <span>The Future of</span><br />
+          <span class="gradient-text">Farm Intelligence</span>
+        </h1>
+        
+        <div class="hero-text-reveal">
+          <Text tag="p" variant="displayXS" class="text-white/80 max-w-3xl mx-auto mb-12 font-light">
+            Revolutionary sensors. Breakthrough analytics. Unprecedented control over your agricultural operations.
+          </Text>
+        </div>
+
+        <div class="hero-text-reveal flex flex-wrap gap-4 justify-center">
+          <Button href="/buy-iot-hub" variant="default" size="lg" class="bg-white text-base-900 hover:bg-base-100">
+            Buy Now - From $899
+          </Button>
+          <Button href="#overview" variant="outline" size="lg" class="border-white text-white hover:bg-white/10">
+            Learn More ↓
+          </Button>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+
+  <!-- Overview Section -->
+  <section id="overview" class="py-32 bg-white">
+    <Wrapper>
+      <div class="max-w-5xl mx-auto text-center">
+        <Text tag="h2" variant="displayXL" class="fade-in font-display text-base-900 mb-8">
+          Precision agriculture.<br />Redefined.
+        </Text>
+        <Text tag="p" variant="displayXS" class="fade-in text-base-600 mb-16 font-light leading-relaxed">
+          IoT Smart Hub transforms how you understand your land. With laboratory-grade sensors and real-time analytics, make decisions based on data, not guesswork.
+        </Text>
+
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+          <div class="fade-in">
+            <div class="text-5xl font-bold text-accent-600 mb-2">±2%</div>
+            <Text tag="p" variant="textLG" class="text-base-600">Moisture Accuracy</Text>
+          </div>
+          <div class="fade-in">
+            <div class="text-5xl font-bold text-accent-600 mb-2">24/7</div>
+            <Text tag="p" variant="textLG" class="text-base-600">Real-time Monitoring</Text>
+          </div>
+          <div class="fade-in">
+            <div class="text-5xl font-bold text-accent-600 mb-2">5yr</div>
+            <Text tag="p" variant="textLG" class="text-base-600">Battery Life</Text>
+          </div>
+        </div>
+
+        <div class="fade-in mt-16 flex justify-center">
+          <Button href="/buy-iot-hub" variant="default" size="md">
+            Buy IoT Hub
+          </Button>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+
+  <!-- Feature Showcase Grid -->
+  <section class="py-32 bg-base-50">
+    <Wrapper>
+      <div class="text-center mb-20">
+        <Text tag="h2" variant="displayXL" class="fade-in font-display text-base-900 mb-4">
+          Every detail. Monitored.
+        </Text>
+        <Text tag="p" variant="displayXS" class="fade-in text-base-600 font-light">
+          Six categories of sensors. Infinite possibilities.
+        </Text>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card spec-card">
+          <div class="text-4xl mb-6">💧</div>
+          <Text tag="h3" variant="displaySM" class="font-display text-base-900 mb-3">
+            Soil Moisture
+          </Text>
+          <Text tag="p" variant="textBase" class="text-base-600 leading-relaxed">
+            Multi-depth sensors track water content at root zones. Know exactly when and how much to irrigate.
+          </Text>
+          <div class="mt-6 pt-6 border-t border-base-200">
+            <div class="text-3xl font-bold text-accent-600">30%</div>
+            <Text tag="p" variant="textSM" class="text-base-500">Water savings</Text>
+          </div>
+        </div>
+
+        <div class="feature-card spec-card">
+          <div class="text-4xl mb-6">🌡️</div>
+          <Text tag="h3" variant="displaySM" class="font-display text-base-900 mb-3">
+            Temperature
+          </Text>
+          <Text tag="p" variant="textBase" class="text-base-600 leading-relaxed">
+            Soil and ambient temperature monitoring protects against frost and optimizes planting schedules.
+          </Text>
+          <div class="mt-6 pt-6 border-t border-base-200">
+            <div class="text-3xl font-bold text-accent-600">±0.5°C</div>
+            <Text tag="p" variant="textSM" class="text-base-500">Accuracy</Text>
+          </div>
+        </div>
+
+        <div class="feature-card spec-card">
+          <div class="text-4xl mb-6">🧪</div>
+          <Text tag="h3" variant="displaySM" class="font-display text-base-900 mb-3">
+            NPK Analysis
+          </Text>
+          <Text tag="p" variant="textBase" class="text-base-600 leading-relaxed">
+            Real-time nutrient levels guide precision fertilizer application, maximizing yield while minimizing waste.
+          </Text>
+          <div class="mt-6 pt-6 border-t border-base-200">
+            <div class="text-3xl font-bold text-accent-600">±5%</div>
+            <Text tag="p" variant="textSM" class="text-base-500">NPK accuracy</Text>
+          </div>
+        </div>
+
+        <div class="feature-card spec-card">
+          <div class="text-4xl mb-6">☀️</div>
+          <Text tag="h3" variant="displaySM" class="font-display text-base-900 mb-3">
+            Solar Radiation
+          </Text>
+          <Text tag="p" variant="textBase" class="text-base-600 leading-relaxed">
+            PAR sensors measure photosynthetically active radiation for optimal greenhouse and shade management.
+          </Text>
+          <div class="mt-6 pt-6 border-t border-base-200">
+            <div class="text-3xl font-bold text-accent-600">0-2000</div>
+            <Text tag="p" variant="textSM" class="text-base-500">μmol/m²/s range</Text>
+          </div>
+        </div>
+
+        <div class="feature-card spec-card">
+          <div class="text-4xl mb-6">💨</div>
+          <Text tag="h3" variant="displaySM" class="font-display text-base-900 mb-3">
+            Weather Station
+          </Text>
+          <Text tag="p" variant="textBase" class="text-base-600 leading-relaxed">
+            Complete meteorological data including wind, rain, humidity, and pressure for hyperlocal forecasting.
+          </Text>
+          <div class="mt-6 pt-6 border-t border-base-200">
+            <div class="text-3xl font-bold text-accent-600">8-in-1</div>
+            <Text tag="p" variant="textSM" class="text-base-500">Weather metrics</Text>
+          </div>
+        </div>
+
+        <div class="feature-card spec-card">
+          <div class="text-4xl mb-6">📡</div>
+          <Text tag="h3" variant="displaySM" class="font-display text-base-900 mb-3">
+            Connectivity
+          </Text>
+          <Text tag="p" variant="textBase" class="text-base-600 leading-relaxed">
+            LoRaWAN, 4G/5G cellular, and satellite options ensure connectivity even in the most remote locations.
+          </Text>
+          <div class="mt-6 pt-6 border-t border-base-200">
+            <div class="text-3xl font-bold text-accent-600">10km</div>
+            <Text tag="p" variant="textSM" class="text-base-500">LoRa range</Text>
+          </div>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+
+  <!-- Technical Specifications with Reveal Animation -->
+  <section class="py-32 bg-white">
+    <Wrapper>
+      <div class="text-center mb-20">
+        <Text tag="h2" variant="displayXL" class="fade-in font-display text-base-900 mb-4">
+          Built for Agriculture
+        </Text>
+        <Text tag="p" variant="displayXS" class="fade-in text-base-600 font-light">
+          Enterprise durability. Laboratory precision.
+        </Text>
+      </div>
+
+      <div class="max-w-6xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-16">
+          <div class="slide-in-left">
+            <Text tag="h3" variant="displayLG" class="font-display text-base-900 mb-12">
+              Performance
+            </Text>
+            
+            <div class="space-y-8">
+              <div class="border-b border-base-200 pb-8">
+                <div class="flex justify-between items-start mb-2">
+                  <Text tag="h4" variant="textXL" class="font-semibold text-base-900">
+                    Sampling Rate
+                  </Text>
+                  <Text tag="p" variant="textXL" class="text-accent-600 font-medium">
+                    5 min - 24 hr
+                  </Text>
+                </div>
+                <Text tag="p" variant="textBase" class="text-base-600">
+                  Configurable data collection intervals
+                </Text>
+              </div>
+
+              <div class="border-b border-base-200 pb-8">
+                <div class="flex justify-between items-start mb-2">
+                  <Text tag="h4" variant="textXL" class="font-semibold text-base-900">
+                    Data Storage
+                  </Text>
+                  <Text tag="p" variant="textXL" class="text-accent-600 font-medium">
+                    128GB - 256GB
+                  </Text>
+                </div>
+                <Text tag="p" variant="textBase" class="text-base-600">
+                  Local storage with cloud sync
+                </Text>
+              </div>
+
+              <div class="border-b border-base-200 pb-8">
+                <div class="flex justify-between items-start mb-2">
+                  <Text tag="h4" variant="textXL" class="font-semibold text-base-900">
+                    Processing
+                  </Text>
+                  <Text tag="p" variant="textXL" class="text-accent-600 font-medium">
+                    Edge AI
+                  </Text>
+                </div>
+                <Text tag="p" variant="textBase" class="text-base-600">
+                  On-device ML for instant insights
+                </Text>
+              </div>
+
+              <div class="pb-8">
+                <div class="flex justify-between items-start mb-2">
+                  <Text tag="h4" variant="textXL" class="font-semibold text-base-900">
+                    API Access
+                  </Text>
+                  <Text tag="p" variant="textXL" class="text-accent-600 font-medium">
+                    RESTful & GraphQL
+                  </Text>
+                </div>
+                <Text tag="p" variant="textBase" class="text-base-600">
+                  Full developer access to all data
+                </Text>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-in-right">
+            <Text tag="h3" variant="displayLG" class="font-display text-base-900 mb-12">
+              Durability
+            </Text>
+            
+            <div class="space-y-8">
+              <div class="border-b border-base-200 pb-8">
+                <div class="flex justify-between items-start mb-2">
+                  <Text tag="h4" variant="textXL" class="font-semibold text-base-900">
+                    Weather Rating
+                  </Text>
+                  <Text tag="p" variant="textXL" class="text-accent-600 font-medium">
+                    IP67
+                  </Text>
+                </div>
+                <Text tag="p" variant="textBase" class="text-base-600">
+                  Complete dust and water protection
+                </Text>
+              </div>
+
+              <div class="border-b border-base-200 pb-8">
+                <div class="flex justify-between items-start mb-2">
+                  <Text tag="h4" variant="textXL" class="font-semibold text-base-900">
+                    Temperature Range
+                  </Text>
+                  <Text tag="p" variant="textXL" class="text-accent-600 font-medium">
+                    -40°C to 85°C
+                  </Text>
+                </div>
+                <Text tag="p" variant="textBase" class="text-base-600">
+                  Operates in extreme conditions
+                </Text>
+              </div>
+
+              <div class="border-b border-base-200 pb-8">
+                <div class="flex justify-between items-start mb-2">
+                  <Text tag="h4" variant="textXL" class="font-semibold text-base-900">
+                    Power System
+                  </Text>
+                  <Text tag="p" variant="textXL" class="text-accent-600 font-medium">
+                    Solar + Battery
+                  </Text>
+                </div>
+                <Text tag="p" variant="textBase" class="text-base-600">
+                  5+ years autonomous operation
+                </Text>
+              </div>
+
+              <div class="pb-8">
+                <div class="flex justify-between items-start mb-2">
+                  <Text tag="h4" variant="textXL" class="font-semibold text-base-900">
+                    Certifications
+                  </Text>
+                  <Text tag="p" variant="textXL" class="text-accent-600 font-medium">
+                    FCC, CE, RoHS
+                  </Text>
+                </div>
+                <Text tag="p" variant="textBase" class="text-base-600">
+                  Global compliance standards
+                </Text>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+
+  <!-- ROI Section -->
+  <section class="py-32 bg-gradient-to-b from-accent-50 to-white">
+    <Wrapper>
+      <div class="max-w-4xl mx-auto text-center">
+        <Text tag="h2" variant="displayXL" class="scale-in font-display text-base-900 mb-8">
+          The smartest investment<br />for your farm.
+        </Text>
+        
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+          <div class="scale-in bg-white rounded-2xl p-8 shadow-lg">
+            <div class="text-5xl font-bold text-accent-600 mb-3">30%</div>
+            <Text tag="p" variant="textLG" class="text-base-700 font-medium mb-2">
+              Water Reduction
+            </Text>
+            <Text tag="p" variant="textBase" class="text-base-600">
+              Average savings in irrigation costs
+            </Text>
+          </div>
+          
+          <div class="scale-in bg-white rounded-2xl p-8 shadow-lg">
+            <div class="text-5xl font-bold text-accent-600 mb-3">15%</div>
+            <Text tag="p" variant="textLG" class="text-base-700 font-medium mb-2">
+              Yield Increase
+            </Text>
+            <Text tag="p" variant="textBase" class="text-base-600">
+              Through optimized growing conditions
+            </Text>
+          </div>
+          
+          <div class="scale-in bg-white rounded-2xl p-8 shadow-lg">
+            <div class="text-5xl font-bold text-accent-600 mb-3">18mo</div>
+            <Text tag="p" variant="textLG" class="text-base-700 font-medium mb-2">
+              ROI Timeline
+            </Text>
+            <Text tag="p" variant="textBase" class="text-base-600">
+              Average payback period
+            </Text>
+          </div>
+        </div>
+
+        <div class="scale-in">
+          <Button href="/buy-iot-hub" variant="default" size="lg">
+            Configure Your System
+          </Button>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-32 bg-base-900 text-white">
+    <Wrapper>
+      <div class="max-w-4xl mx-auto text-center">
+        <Text tag="h2" variant="displayXL" class="fade-in font-display mb-6">
+          Ready to transform your farm?
+        </Text>
+        <Text tag="p" variant="displayXS" class="fade-in text-white/80 mb-12 font-light">
+          Join thousands of farmers already using IoT Smart Hub.
+        </Text>
+        <div class="fade-in flex flex-wrap gap-4 justify-center">
+          <Button href="/buy-iot-hub" variant="default" size="lg" class="bg-white text-base-900 hover:bg-base-100">
+            Buy Now
+          </Button>
+          <Button href="/contact" variant="outline" size="lg" class="border-white text-white hover:bg-white/10">
+            Schedule Demo
+          </Button>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+
+  <script>
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all animated elements
+    document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in, .spec-card').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Sticky nav show/hide
+    const productNav = document.getElementById('product-nav');
+    let lastScrollY = 0;
+    
+    window.addEventListener('scroll', () => {
+      const currentScrollY = window.scrollY;
+      
+      if (currentScrollY > 500) {
+        productNav?.classList.add('visible');
+      } else {
+        productNav?.classList.remove('visible');
+      }
+      
+      lastScrollY = currentScrollY;
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</BaseLayout>

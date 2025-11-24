@@ -1,44 +1,44 @@
 ---
 name: Sarah Chen
-title: Senior Partner
-bio: Leading expert in intellectual property law with 20+ years of experience protecting innovative companies.
-experience: Over 20 years in IP litigation and counseling for tech startups and Fortune 500 companies.
+title: Agricultural IoT Specialist
+bio: Leading expert in precision agriculture and IoT systems with 15+ years optimizing farm operations.
+experience: Over 15 years implementing smart agriculture solutions for farms from family operations to large commercial enterprises.
 education:
-  - J.D., Stanford Law School
-  - B.S., Computer Science, MIT
-barAdmissions:
-  - California
-  - New York
-  - USPTO Registered Patent Attorney
+  - M.S., Agricultural Engineering, UC Davis
+  - B.S., Electrical Engineering, Stanford University
+certifications:
+  - Certified Crop Advisor (CCA)
+  - Precision Agriculture Specialist
+  - LEED Green Associate
 specialties:
-  - Patent Litigation
-  - Trademark Protection
-  - Technology Transactions
-  - IP Due Diligence
+  - Precision Irrigation Systems
+  - Soil Health Monitoring
+  - Farm Automation
+  - Sustainable Agriculture
 image:
   url: "/src/images/team/sarah-chen.jpg"
   alt: Sarah Chen portrait
 contact:
-  email: sarah@lexfordlaw.com
-  phone: +1 (415) 555-0123
-  location: San Francisco Office
+  email: sarah@farmeasy.ag
+  phone: +1 (916) 555-0123
+  location: Sacramento Office
 socials:
   linkedin: "#_"
 
 ---
 
-Sarah Chen is a senior partner specializing in intellectual property law. She has successfully litigated numerous high-stakes patent disputes and counseled innovative companies on IP strategy and protection.
+Sarah Chen is a senior agricultural technology specialist focusing on precision agriculture and IoT implementation. She has successfully deployed smart farming systems across California's Central Valley and helped hundreds of farmers reduce water usage while improving yields.
 
-Her technical background in computer science combined with her legal expertise makes her uniquely qualified to handle complex technology-related legal matters. Sarah has been recognized by various legal publications for her work in IP law.
+Her engineering background combined with deep agricultural expertise makes her uniquely qualified to design customized automation solutions. Sarah has been recognized by agricultural publications for her innovative work in sustainable farming technology.
 
 ## Notable Achievements
 
-- Successfully defended a $500M patent portfolio for a major tech company
-- Led IP due diligence for multiple unicorn acquisitions
-- Authored numerous articles on emerging IP issues in AI and blockchain
+- Implemented irrigation systems saving 50+ million gallons of water annually
+- Led IoT deployments for farms totaling over 10,000 acres
+- Developed proprietary algorithms for crop-specific sensor calibration
 
 ## Professional Affiliations
 
-- American Intellectual Property Law Association (AIPLA)
-- California State Bar IP Section
-- USPTO Patent Examiner Alumni Association
+- American Society of Agricultural and Biological Engineers (ASABE)
+- California Farm Bureau Technology Council
+- Precision Agriculture Association Board Member

@@ -10,7 +10,7 @@ import { getCollection } from "astro:content";
 
 const allTeamMembers = await getCollection("team");
 
-// Select first 4 attorneys to feature
+// Select first 4 team members to feature
 
 const teamCount = allTeamMembers.length;
 ---
@@ -23,7 +23,7 @@ const teamCount = allTeamMembers.length;
         variant="textXS"
         class="text-secondary-500 tracking-wide uppercase"
       >
-        The team
+        Leadership
       </Text>
       <div class="lg:col-span-3">
         <Text
@@ -34,9 +34,9 @@ const teamCount = allTeamMembers.length;
           Our Team
         </Text>
         <Text tag="p" variant="textLG" class="text-base-600 mt-4">
-          Meet our experienced attorneys who are dedicated to providing
-          exceptional legal representation and building lasting relationships
-          with our clients.
+          Meet our experienced agricultural technology experts who are dedicated to providing
+          innovative IoT solutions and building lasting partnerships
+          with farmers.
         </Text>
       </div>
     </div>
@@ -45,7 +45,7 @@ const teamCount = allTeamMembers.length;
       {
         allTeamMembers
           .slice(0, 2)
-          .map((attorney) => <TeamCard post={attorney} />)
+          .map((member) => <TeamCard post={member} />)
       }
     </div>
     <div class="bg-base-50 p-8 lg:p-12 mt-8">
@@ -61,7 +61,7 @@ const teamCount = allTeamMembers.length;
             Meet the full team
           </Text>
           <Text tag="p" variant="textSM" class="text-base-600 mt-1">
-            Get to know our {teamCount}+ attorneys and their areas of focus.
+            Get to know our {teamCount}+ experts and their areas of expertise.
           </Text>
         </div>
         <div
@@ -74,7 +74,7 @@ const teamCount = allTeamMembers.length;
             size="sm"
             class="w-full lg:w-fit"
           >
-            Meet all attorneys
+            Meet all team members
           </Button>
           <Button
             isLink={true}
@@ -83,7 +83,7 @@ const teamCount = allTeamMembers.length;
             href="/careers"
             class="w-full lg:w-fit"
           >
-            Careers
+            Join Our Team
           </Button>
         </div>
       </div>

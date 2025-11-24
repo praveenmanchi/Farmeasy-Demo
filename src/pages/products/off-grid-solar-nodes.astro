@@ -1,0 +1,320 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Wrapper from "@/components/fundations/containers/Wrapper.astro";
+import Text from "@/components/fundations/elements/Text.astro";
+import Button from "@/components/fundations/elements/Button.astro";
+import Cta from "@/components/global/Cta.astro";
+
+const pageTitle = "Off-Grid Solar IoT Nodes | FarmEasy";
+const pageDescription = "Autonomous solar-powered IoT nodes that keep your farm monitoring systems running 24/7, even in the most remote locations.";
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-amber-50 to-white">
+    <Wrapper>
+      <div class="py-20 lg:py-32">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="inline-block px-4 py-2 bg-amber-100 text-amber-800 rounded-full text-sm font-medium mb-6">
+              Solar Power
+            </div>
+            <h1 class="text-4xl lg:text-6xl font-bold text-base-900 mb-6">
+              Off-Grid Solar IoT Nodes
+            </h1>
+            <Text size="xl" class="mb-8">
+              Completely autonomous power systems that harness solar energy to keep your IoT sensors and monitoring equipment running 24/7, no matter how remote your location.
+            </Text>
+            <div class="flex flex-wrap gap-4">
+              <Button href="/free-consultation" variant="primary">
+                Get Started
+              </Button>
+              <Button href="/contact" variant="outline">
+                Contact Sales
+              </Button>
+            </div>
+          </div>
+          <div class="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden bg-base-100">
+            <video
+              autoplay
+              loop
+              muted
+              playsinline
+              class="absolute inset-0 w-full h-full object-cover"
+            >
+              <source src="/videos/solar-nodes.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+
+  <!-- Key Features -->
+  <section class="py-20 bg-white">
+    <Wrapper>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-5xl font-bold text-base-900 mb-4">
+          Unlimited Clean Energy
+        </h2>
+        <Text size="lg" class="max-w-2xl mx-auto">
+          Enterprise-grade solar power engineered specifically for agricultural IoT deployments.
+        </Text>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="bg-base-50 p-8 rounded-xl">
+          <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-lg flex items-center justify-center mb-4 text-2xl">
+            ☀️
+          </div>
+          <h3 class="text-xl font-bold text-base-900 mb-3">High-Efficiency Panels</h3>
+          <Text>
+            Monocrystalline solar cells with 22% efficiency convert maximum sunlight to usable power, even on cloudy days.
+          </Text>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-base-50 p-8 rounded-xl">
+          <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-lg flex items-center justify-center mb-4 text-2xl">
+            🔋
+          </div>
+          <h3 class="text-xl font-bold text-base-900 mb-3">Smart Battery Management</h3>
+          <Text>
+            Lithium-ion batteries with intelligent charge controllers ensure reliable operation through weeks of overcast weather.
+          </Text>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-base-50 p-8 rounded-xl">
+          <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-lg flex items-center justify-center mb-4 text-2xl">
+            🌧️
+          </div>
+          <h3 class="text-xl font-bold text-base-900 mb-3">All-Weather Durability</h3>
+          <Text>
+            IP67-rated enclosures protect electronics from rain, dust, extreme temperatures, and agricultural chemicals.
+          </Text>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="bg-base-50 p-8 rounded-xl">
+          <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-lg flex items-center justify-center mb-4 text-2xl">
+            ⚡
+          </div>
+          <h3 class="text-xl font-bold text-base-900 mb-3">Power Optimization</h3>
+          <Text>
+            Advanced MPPT technology maximizes energy harvest and extends battery life through intelligent power management.
+          </Text>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="bg-base-50 p-8 rounded-xl">
+          <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-lg flex items-center justify-center mb-4 text-2xl">
+            📊
+          </div>
+          <h3 class="text-xl font-bold text-base-900 mb-3">Energy Monitoring</h3>
+          <Text>
+            Real-time tracking of solar production, battery status, and power consumption via your dashboard.
+          </Text>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="bg-base-50 p-8 rounded-xl">
+          <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-lg flex items-center justify-center mb-4 text-2xl">
+            🔧
+          </div>
+          <h3 class="text-xl font-bold text-base-900 mb-3">Low Maintenance</h3>
+          <Text>
+            Self-cleaning solar panels and sealed electronics require minimal upkeep, reducing operational costs.
+          </Text>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+
+  <!-- Technical Specifications -->
+  <section class="py-20 bg-base-50">
+    <Wrapper>
+      <div class="grid lg:grid-cols-2 gap-16 items-start">
+        <div>
+          <h2 class="text-3xl lg:text-4xl font-bold text-base-900 mb-6">
+            Technical Specifications
+          </h2>
+          <Text size="lg" class="mb-8">
+            Ruggedized solar power systems designed to operate continuously in harsh agricultural environments.
+          </Text>
+
+          <div class="space-y-6">
+            <div class="border-l-4 border-amber-500 pl-6">
+              <h3 class="font-bold text-base-900 mb-2">Solar Panel</h3>
+              <Text>50W monocrystalline, 22% efficiency, 25-year warranty</Text>
+            </div>
+
+            <div class="border-l-4 border-amber-500 pl-6">
+              <h3 class="font-bold text-base-900 mb-2">Battery Capacity</h3>
+              <Text>100Ah lithium iron phosphate (LiFePO4), 5000+ cycle lifespan</Text>
+            </div>
+
+            <div class="border-l-4 border-amber-500 pl-6">
+              <h3 class="font-bold text-base-900 mb-2">Autonomy</h3>
+              <Text>14+ days operation without sunlight at typical sensor load</Text>
+            </div>
+
+            <div class="border-l-4 border-amber-500 pl-6">
+              <h3 class="font-bold text-base-900 mb-2">Operating Temperature</h3>
+              <Text>-40°C to 85°C with thermal management</Text>
+            </div>
+
+            <div class="border-l-4 border-amber-500 pl-6">
+              <h3 class="font-bold text-base-900 mb-2">Charging System</h3>
+              <Text>MPPT charge controller with overcharge/discharge protection</Text>
+            </div>
+
+            <div class="border-l-4 border-amber-500 pl-6">
+              <h3 class="font-bold text-base-900 mb-2">Output Voltage</h3>
+              <Text>12V DC regulated, supports multiple sensor types</Text>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-lg">
+          <h3 class="text-2xl font-bold text-base-900 mb-6">Benefits</h3>
+          
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-8 h-8 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center font-bold">
+                ✓
+              </div>
+              <div>
+                <h4 class="font-bold text-base-900 mb-1">99.9% Uptime</h4>
+                <Text>Continuous operation even during extended cloudy periods</Text>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-8 h-8 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center font-bold">
+                ✓
+              </div>
+              <div>
+                <h4 class="font-bold text-base-900 mb-1">Zero Operating Costs</h4>
+                <Text>No electricity bills or generator fuel expenses</Text>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-8 h-8 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center font-bold">
+                ✓
+              </div>
+              <div>
+                <h4 class="font-bold text-base-900 mb-1">Remote Deployment</h4>
+                <Text>Monitor fields miles from grid power infrastructure</Text>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-8 h-8 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center font-bold">
+                ✓
+              </div>
+              <div>
+                <h4 class="font-bold text-base-900 mb-1">Scalable Network</h4>
+                <Text>Easily expand monitoring coverage as your needs grow</Text>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-8 h-8 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center font-bold">
+                ✓
+              </div>
+              <div>
+                <h4 class="font-bold text-base-900 mb-1">Sustainable Energy</h4>
+                <Text>Reduce carbon footprint with clean, renewable power</Text>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-8 h-8 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center font-bold">
+                ✓
+              </div>
+              <div>
+                <h4 class="font-bold text-base-900 mb-1">Quick Installation</h4>
+                <Text>Deploy nodes in hours, not days or weeks</Text>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+
+  <!-- Power Calculator -->
+  <section class="py-20 bg-white">
+    <Wrapper>
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl lg:text-5xl font-bold text-base-900 mb-6">
+          Engineered for Reliability
+        </h2>
+        <Text size="lg" class="mb-12">
+          Our solar nodes are built to withstand the toughest agricultural conditions while providing reliable power year-round.
+        </Text>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+          <div class="bg-base-50 p-6 rounded-xl">
+            <div class="text-4xl font-bold text-green-600 mb-2">5+ years</div>
+            <Text class="font-medium">Battery lifespan</Text>
+          </div>
+          <div class="bg-base-50 p-6 rounded-xl">
+            <div class="text-4xl font-bold text-green-600 mb-2">25 years</div>
+            <Text class="font-medium">Solar panel warranty</Text>
+          </div>
+          <div class="bg-base-50 p-6 rounded-xl">
+            <div class="text-4xl font-bold text-green-600 mb-2">IP67</div>
+            <Text class="font-medium">Weatherproof rating</Text>
+          </div>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+
+  <!-- Use Cases -->
+  <section class="py-20 bg-base-50">
+    <Wrapper>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-5xl font-bold text-base-900 mb-4">
+          Perfect for Any Location
+        </h2>
+        <Text size="lg" class="max-w-2xl mx-auto">
+          Whether you're monitoring a back forty or a remote pasture, solar nodes deliver reliable power.
+        </Text>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-xl text-center">
+          <div class="text-3xl mb-3">🌾</div>
+          <h3 class="font-bold text-base-900 mb-2">Remote Fields</h3>
+          <Text>Far from grid infrastructure</Text>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl text-center">
+          <div class="text-3xl mb-3">🐄</div>
+          <h3 class="font-bold text-base-900 mb-2">Grazing Land</h3>
+          <Text>Track livestock and pasture</Text>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl text-center">
+          <div class="text-3xl mb-3">💧</div>
+          <h3 class="font-bold text-base-900 mb-2">Water Sources</h3>
+          <Text>Monitor ponds and wells</Text>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl text-center">
+          <div class="text-3xl mb-3">🏔️</div>
+          <h3 class="font-bold text-base-900 mb-2">Hill Country</h3>
+          <Text>Terrain too rough for wiring</Text>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+
+  <!-- CTA -->
+  <Cta />
+</BaseLayout>

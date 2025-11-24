@@ -1,47 +1,44 @@
 ---
 name: Michael Rodriguez
-title: Litigation Partner
-bio: Aggressive litigator with a proven track record in complex commercial disputes and class actions.
-experience: 18 years of trial experience in federal and state courts across multiple jurisdictions.
+title: Solar Power Engineer
+bio: Renewable energy expert specializing in off-grid agricultural power systems.
+experience: Over 12 years designing and deploying solar-powered IoT networks for remote farm monitoring.
 education:
-  - J.D., University of Chicago Law School
-  - B.A., Political Science, UCLA
-barAdmissions:
-  - Illinois
-  - California
-  - U.S. District Court (Northern District of Illinois)
-  - U.S. Court of Appeals (7th Circuit)
+  - M.S., Renewable Energy Engineering, Colorado State University
+  - B.S., Mechanical Engineering, Texas A&M University
+certifications:
+  - NABCEP PV Installation Professional
+  - Professional Engineer (PE) License
+  - Energy Management Professional
 specialties:
-  - Commercial Litigation
-  - Class Action Defense
-  - Product Liability
-  - Contract Disputes
+  - Solar IoT Networks
+  - Off-Grid Power Systems
+  - Energy Storage Solutions
+  - Farm Electrification
 image:
   url: "/src/images/team/michael-rodriguez.jpg"
   alt: Michael Rodriguez portrait
 contact:
-  email: michael@lexfordlaw.com
-  phone: +1 (312) 555-0456
-  location: Chicago Office
+  email: michael@farmeasy.ag
+  phone: +1 (916) 555-0124
+  location: Sacramento Office
 socials:
   linkedin: "#_"
 
 ---
 
-Michael Rodriguez brings 18 years of litigation experience to our firm, specializing in complex commercial disputes and class action defense. His aggressive yet strategic approach has resulted in numerous favorable outcomes for clients.
+Michael Rodriguez is a renewable energy engineer specializing in solar-powered agricultural automation. He designs robust off-grid systems that keep farm monitoring equipment running 24/7 in remote locations without grid access.
 
-## Trial Experience
+His expertise in energy storage and low-power electronics ensures FarmEasy systems remain operational even during extended cloudy periods. Michael's solar designs have powered sensors across thousands of acres in diverse climates.
 
-Michael has tried over 25 cases to verdict and argued appeals before multiple federal circuits. His courtroom presence and preparation have earned him respect from judges and opposing counsel alike.
+## Notable Achievements
 
-## Representative Matters
+- Designed solar power systems for 200+ farm deployments
+- Achieved 99.9% uptime in harsh agricultural environments
+- Reduced system costs by 40% through innovative battery management
 
-- Defended Fortune 500 company in $100M+ product liability class action
-- Successfully appealed adverse jury verdict in commercial contract dispute
-- Obtained summary judgment in multi-district litigation involving consumer products
+## Professional Affiliations
 
-## Community Involvement
-
-- Chicago Bar Association Litigation Section Chair
-- Volunteer mediator for Cook County Court system
-- Mentor for minority law students
+- American Solar Energy Society (ASES)
+- IEEE Power & Energy Society
+- North American Board of Certified Energy Practitioners (NABCEP)

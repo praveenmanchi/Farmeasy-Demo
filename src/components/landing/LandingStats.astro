@@ -3,12 +3,12 @@ import Text from "@/components/fundations/elements/Text.astro";
 import Wrapper from "@/components/fundations/containers/Wrapper.astro";
 // Stats array (expanded)
 const stats = [
-  { value: "20+", label: "Years Experience" },
-  { value: "500+", label: "Cases Won" },
-  { value: "98%", label: "Success Rate" },
-  { value: "50M+", label: "In Recoveries" },
-  { value: "4.9/5", label: "Avg. Rating" },
-  { value: "100+", label: "5-Star Reviews" },
+  { value: "500+", label: "Farms Served" },
+  { value: "10K+", label: "Sensors Deployed" },
+  { value: "99.8%", label: "Uptime Reliability" },
+  { value: "30%", label: "Water Saved" },
+  { value: "24/7", label: "Live Monitoring" },
+  { value: "5yr", label: "Battery Life" },
 ];
 // Precompute numeric targets and suffixes for animation
 const enhancedStats = stats.map((s) => {
@@ -30,7 +30,7 @@ const enhancedStats = stats.map((s) => {
         variant="textXS"
         class="text-accent-700 font-semibold tracking-wide uppercase"
       >
-        Proven Results
+        Impact Metrics
       </Text>
       <div class="lg:col-span-3">
         <Text
@@ -38,16 +38,15 @@ const enhancedStats = stats.map((s) => {
           variant="displayLG"
           class="text-accent-800 font-display text-balance lg:col-span-2"
         >
-          Results that speak for themselves
+          Making Agriculture Smarter
         </Text>
         <Text
           tag="p"
           variant="textBase"
           class="text-base-700 mt-2 lg:text-balance"
         >
-          We’ve built a track record of winning difficult cases and delivering
-          meaningful outcomes for our clients. Here are a few numbers behind our
-          work.
+          We've built a track record of helping farms optimize operations and reduce resource waste.
+          Here are a few numbers that demonstrate our agricultural impact.
         </Text>
       </div>
     </div>

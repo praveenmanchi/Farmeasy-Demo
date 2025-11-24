@@ -1,0 +1,349 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Wrapper from "@/components/fundations/containers/Wrapper.astro";
+import Text from "@/components/fundations/elements/Text.astro";
+import Button from "@/components/fundations/elements/Button.astro";
+import Cta from "@/components/global/Cta.astro";
+
+const pageTitle = "Secure Dashboards | FarmEasy";
+const pageDescription = "Intuitive analytics platform with enterprise-grade security. Access real-time farm data from any device, anywhere.";
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-blue-50 to-white">
+    <Wrapper>
+      <div class="py-20 lg:py-32">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="inline-block px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-6">
+              Analytics Platform
+            </div>
+            <h1 class="text-4xl lg:text-6xl font-bold text-base-900 mb-6">
+              Secure Dashboards
+            </h1>
+            <Text size="xl" class="mb-8">
+              Transform raw sensor data into actionable insights with our intuitive analytics platform. Monitor your entire operation from desktop or mobile with bank-level security.
+            </Text>
+            <div class="flex flex-wrap gap-4">
+              <Button href="/free-consultation" variant="primary">
+                Get Started
+              </Button>
+              <Button href="/contact" variant="outline">
+                Schedule Demo
+              </Button>
+            </div>
+          </div>
+          <div class="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden bg-base-100 shadow-2xl">
+            <video
+              autoplay
+              loop
+              muted
+              playsinline
+              class="absolute inset-0 w-full h-full object-cover"
+            >
+              <source src="/videos/dashboard.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+
+  <!-- Key Features -->
+  <section class="py-20 bg-white">
+    <Wrapper>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-5xl font-bold text-base-900 mb-4">
+          Your Farm Command Center
+        </h2>
+        <Text size="lg" class="max-w-2xl mx-auto">
+          Everything you need to monitor, analyze, and optimize your farm operations in one secure platform.
+        </Text>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="bg-base-50 p-8 rounded-xl">
+          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center mb-4 text-2xl">
+            📊
+          </div>
+          <h3 class="text-xl font-bold text-base-900 mb-3">Real-Time Visualization</h3>
+          <Text>
+            Interactive charts and graphs update live as sensors collect data, giving you instant visibility into conditions.
+          </Text>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-base-50 p-8 rounded-xl">
+          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center mb-4 text-2xl">
+            🔔
+          </div>
+          <h3 class="text-xl font-bold text-base-900 mb-3">Custom Alerts</h3>
+          <Text>
+            Set thresholds for any metric and receive instant notifications via SMS, email, or push notification.
+          </Text>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-base-50 p-8 rounded-xl">
+          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center mb-4 text-2xl">
+            📱
+          </div>
+          <h3 class="text-xl font-bold text-base-900 mb-3">Mobile Access</h3>
+          <Text>
+            Native iOS and Android apps provide full dashboard access from anywhere on your farm or around the world.
+          </Text>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="bg-base-50 p-8 rounded-xl">
+          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center mb-4 text-2xl">
+            📈
+          </div>
+          <h3 class="text-xl font-bold text-base-900 mb-3">Historical Analysis</h3>
+          <Text>
+            Access years of historical data to identify trends, plan crop rotations, and optimize resource allocation.
+          </Text>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="bg-base-50 p-8 rounded-xl">
+          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center mb-4 text-2xl">
+            🗺️
+          </div>
+          <h3 class="text-xl font-bold text-base-900 mb-3">Field Mapping</h3>
+          <Text>
+            Visualize sensor data overlaid on satellite imagery to understand spatial variations across fields.
+          </Text>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="bg-base-50 p-8 rounded-xl">
+          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center mb-4 text-2xl">
+            📋
+          </div>
+          <h3 class="text-xl font-bold text-base-900 mb-3">Custom Reports</h3>
+          <Text>
+            Generate automated reports for compliance, insurance, or internal analysis with one-click exports.
+          </Text>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+
+  <!-- Security Features -->
+  <section class="py-20 bg-base-50">
+    <Wrapper>
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="text-3xl lg:text-4xl font-bold text-base-900 mb-6">
+            Enterprise-Grade Security
+          </h2>
+          <Text size="lg" class="mb-8">
+            Your farm data is valuable. We protect it with the same security standards used by financial institutions.
+          </Text>
+
+          <div class="space-y-6">
+            <div class="flex gap-4 items-start">
+              <div class="flex-shrink-0 w-10 h-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center font-bold">
+                🔒
+              </div>
+              <div>
+                <h3 class="font-bold text-base-900 mb-2">End-to-End Encryption</h3>
+                <Text>All data transmitted between sensors and servers uses AES-256 encryption</Text>
+              </div>
+            </div>
+
+            <div class="flex gap-4 items-start">
+              <div class="flex-shrink-0 w-10 h-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center font-bold">
+                👤
+              </div>
+              <div>
+                <h3 class="font-bold text-base-900 mb-2">Role-Based Access</h3>
+                <Text>Grant specific permissions to employees, consultants, or partners</Text>
+              </div>
+            </div>
+
+            <div class="flex gap-4 items-start">
+              <div class="flex-shrink-0 w-10 h-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center font-bold">
+                🔐
+              </div>
+              <div>
+                <h3 class="font-bold text-base-900 mb-2">Two-Factor Authentication</h3>
+                <Text>Optional 2FA adds an extra layer of account protection</Text>
+              </div>
+            </div>
+
+            <div class="flex gap-4 items-start">
+              <div class="flex-shrink-0 w-10 h-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center font-bold">
+                ☁️
+              </div>
+              <div>
+                <h3 class="font-bold text-base-900 mb-2">Secure Cloud Storage</h3>
+                <Text>Data backed up across multiple geographic regions with 99.99% uptime SLA</Text>
+              </div>
+            </div>
+
+            <div class="flex gap-4 items-start">
+              <div class="flex-shrink-0 w-10 h-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center font-bold">
+                📜
+              </div>
+              <div>
+                <h3 class="font-bold text-base-900 mb-2">Compliance Ready</h3>
+                <Text>SOC 2 Type II certified, GDPR and CCPA compliant</Text>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-lg">
+          <h3 class="text-2xl font-bold text-base-900 mb-6">Dashboard Features</h3>
+          
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center font-bold">
+                ✓
+              </div>
+              <div>
+                <h4 class="font-bold text-base-900 mb-1">Customizable Widgets</h4>
+                <Text>Arrange your dashboard to show the metrics that matter most</Text>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center font-bold">
+                ✓
+              </div>
+              <div>
+                <h4 class="font-bold text-base-900 mb-1">Multi-Farm Management</h4>
+                <Text>Switch between multiple farm operations from one account</Text>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center font-bold">
+                ✓
+              </div>
+              <div>
+                <h4 class="font-bold text-base-900 mb-1">API Access</h4>
+                <Text>Integrate data with farm management software and third-party tools</Text>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center font-bold">
+                ✓
+              </div>
+              <div>
+                <h4 class="font-bold text-base-900 mb-1">Data Export</h4>
+                <Text>Download reports in CSV, PDF, or Excel format for analysis</Text>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center font-bold">
+                ✓
+              </div>
+              <div>
+                <h4 class="font-bold text-base-900 mb-1">Offline Mode</h4>
+                <Text>Mobile apps cache data for viewing even without internet connection</Text>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+
+  <!-- Analytics Capabilities -->
+  <section class="py-20 bg-white">
+    <Wrapper>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-5xl font-bold text-base-900 mb-4">
+          Advanced Analytics
+        </h2>
+        <Text size="lg" class="max-w-2xl mx-auto">
+          Turn data into decisions with AI-powered insights and predictive analytics.
+        </Text>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl">
+          <h3 class="text-2xl font-bold text-base-900 mb-4">Predictive Models</h3>
+          <Text class="mb-6">
+            Machine learning algorithms analyze historical patterns to forecast irrigation needs, predict disease risk, and optimize harvest timing.
+          </Text>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-3">
+              <span class="text-blue-600">▸</span>
+              <Text>7-day soil moisture forecasts</Text>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-blue-600">▸</span>
+              <Text>Crop growth stage predictions</Text>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-blue-600">▸</span>
+              <Text>Pest and disease risk alerts</Text>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl">
+          <h3 class="text-2xl font-bold text-base-900 mb-4">Benchmarking</h3>
+          <Text class="mb-6">
+            Compare your farm's performance against regional averages, historical data, and industry best practices.
+          </Text>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-3">
+              <span class="text-green-600">▸</span>
+              <Text>Water efficiency comparisons</Text>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-green-600">▸</span>
+              <Text>Yield optimization insights</Text>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-green-600">▸</span>
+              <Text>Cost per acre analysis</Text>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+
+  <!-- Platform Stats -->
+  <section class="py-20 bg-base-50">
+    <Wrapper>
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-5xl font-bold text-base-900 mb-4">
+          Trusted by Farmers Worldwide
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="text-4xl font-bold text-blue-600 mb-2">500+</div>
+          <Text class="font-medium">Active farms</Text>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-blue-600 mb-2">10M+</div>
+          <Text class="font-medium">Data points daily</Text>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-blue-600 mb-2">99.99%</div>
+          <Text class="font-medium">Platform uptime</Text>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-blue-600 mb-2">24/7</div>
+          <Text class="font-medium">Support available</Text>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+
+  <!-- CTA -->
+  <Cta />
+</BaseLayout>

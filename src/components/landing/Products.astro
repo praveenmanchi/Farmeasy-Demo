@@ -1,0 +1,182 @@
+---
+import Text from "@/components/fundations/elements/Text.astro";
+import Wrapper from "@/components/fundations/containers/Wrapper.astro";
+import Button from "@/components/fundations/elements/Button.astro";
+
+const products = [
+  {
+    stat1: { value: "24/7", description: "Real-time monitoring" },
+    stat2: { value: "99%", description: "Uptime reliability" },
+    title: "Smart Sensor Monitoring",
+    description: "Real-time temperature, humidity, and soil readings for optimal crop health and precision agriculture.",
+    category: "IoT Sensors",
+    video: "/videos/sensor-monitoring.mp4",
+    url: "/products/smart-sensor-monitoring"
+  },
+  {
+    stat1: { value: "100%", description: "Solar powered" },
+    stat2: { value: "5yr", description: "Battery life" },
+    title: "Off-grid Solar IoT Nodes",
+    description: "Reliable farm automation with sustainable energy solutions for remote field monitoring.",
+    category: "Solar Technology",
+    video: "/videos/solar-nodes.mp4",
+    url: "/products/off-grid-solar-nodes"
+  },
+  {
+    stat1: { value: "Live", description: "Data insights" },
+    stat2: { value: "Secure", description: "Cloud storage" },
+    title: "Secure Dashboards",
+    description: "Real-time insights and trends with comprehensive analytics for data-driven farm management.",
+    category: "Analytics Platform",
+    video: "/videos/dashboard.mp4",
+    url: "/products/secure-dashboards"
+  }
+];
+---
+
+<section class="bg-white">
+  <Wrapper variant="standard" class="py-20">
+    <div class="grid grid-cols-1 lg:grid-cols-4 items-start gap-y-8">
+      <Text
+        tag="p"
+        variant="textXS"
+        class="text-secondary-500 tracking-wide uppercase"
+      >
+        Our Solutions
+      </Text>
+      <div class="lg:col-span-3">
+        <Text
+          tag="h2"
+          variant="displayLG"
+          class="text-accent-800 font-display text-balance"
+        >
+          Products
+        </Text>
+        <Text tag="p" variant="textLG" class="text-base-600 mt-4">
+          Comprehensive IoT solutions designed for modern agriculture. Our solar-powered monitoring systems deliver real-time insights to optimize farm operations.
+        </Text>
+      </div>
+    </div>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-3 mt-12 lg:mt-24 gap-8">
+      {products.map((product) => (
+        <div class="relative overflow-hidden bg-base-50 p-8 flex flex-col min-h-[600px] hover:shadow-md transition-shadow duration-300">
+          <video 
+            autoplay 
+            loop 
+            muted 
+            playsinline
+            class="absolute inset-0 w-full h-full object-cover opacity-20"
+          >
+            <source src={product.video} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          
+          <div class="relative z-10 flex flex-col h-full">
+            <Text
+              tag="p"
+              variant="textXS"
+              class="text-secondary-500 tracking-widest uppercase"
+            >
+              {product.category}
+            </Text>
+            
+            <div class="flex gap-12 mt-6">
+              <div>
+                <Text
+                  tag="p"
+                  variant="displayMD"
+                  class="text-base-800 font-display font-bold"
+                >
+                  {product.stat1.value}
+                </Text>
+                <Text tag="p" variant="textXS" class="text-base-600 mt-1">
+                  {product.stat1.description}
+                </Text>
+              </div>
+              <div>
+                <Text
+                  tag="p"
+                  variant="displayMD"
+                  class="text-base-800 font-display font-bold"
+                >
+                  {product.stat2.value}
+                </Text>
+                <Text tag="p" variant="textXS" class="text-base-600 mt-1">
+                  {product.stat2.description}
+                </Text>
+              </div>
+            </div>
+
+            <div class="flex-1"></div>
+
+            <div class="mt-auto">
+              <Text
+                tag="h3"
+                variant="displaySM"
+                class="text-base-900 font-display"
+              >
+                {product.title}
+              </Text>
+              <Text
+                tag="p"
+                variant="textSM"
+                class="text-base-600 mt-2 mb-6"
+              >
+                {product.description}
+              </Text>
+
+              <div class="flex justify-end">
+                <Button
+                  isLink={true}
+                  href={product.url}
+                  variant="default"
+                  size="sm"
+                >
+                  Learn More
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="bg-base-50 p-8 lg:p-12 mt-8 border border-base-100 rounded-xl">
+      <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+        <div>
+          <Text
+            tag="h3"
+            variant="displaySM"
+            class="text-accent-800 font-display"
+          >
+            Ready to transform your farm?
+          </Text>
+          <Text tag="p" variant="textSM" class="text-base-600 mt-1">
+            Discover how our IoT solutions can optimize your agricultural operations.
+          </Text>
+        </div>
+        <div class="flex flex-col lg:flex-row w-full lg:w-fit items-center gap-2">
+          <Button
+            isLink={true}
+            href="/contact"
+            variant="default"
+            size="sm"
+            class="w-full lg:w-fit"
+          >
+            Request Demo
+          </Button>
+          <Button
+            isLink={true}
+            variant="muted"
+            size="sm"
+            href="/products"
+            class="w-full lg:w-fit"
+          >
+            View All Products
+          </Button>
+        </div>
+      </div>
+    </div>
+  </Wrapper>
+</section>

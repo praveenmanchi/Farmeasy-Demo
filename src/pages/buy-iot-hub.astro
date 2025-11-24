@@ -1,0 +1,643 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Wrapper from "@/components/fundations/containers/Wrapper.astro";
+import Text from "@/components/fundations/elements/Text.astro";
+import Button from "@/components/fundations/elements/Button.astro";
+import { Image } from "astro:assets";
+import iotHubBlack from "@/images/assets/iot-hub-black.jpg";
+import iotHubWhite from "@/images/assets/iot-hub-white.jpg";
+import iotHubSilver from "@/images/assets/iot-hub-silver.jpg";
+---
+
+<BaseLayout>
+  <section class="pt-24 pb-12 bg-base-50">
+    <Wrapper variant="standard">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-8">
+          <Text tag="p" variant="textXS" class="text-secondary-500 uppercase tracking-wider font-medium">
+            New
+          </Text>
+          <Text tag="h1" variant="displayXL" class="text-accent-900 font-display mt-2">
+            Buy IoT Smart Hub
+          </Text>
+          <Text tag="p" variant="textLG" class="text-base-700 mt-4">
+            From $899 or $37.45/mo. for 24 mo.*
+          </Text>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-sm border border-base-200 mt-12">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div class="space-y-8">
+              <div>
+                <Text tag="h2" variant="displaySM" class="text-accent-900 font-display mb-6">
+                  Model. Which is best for you?
+                </Text>
+                <div class="space-y-3">
+                  <button
+                    type="button"
+                    data-model="pro"
+                    data-price="1099"
+                    data-name="FarmEasy Smart Hub Pro"
+                    class="model-btn w-full p-4 border-2 border-accent-600 bg-accent-50 rounded-lg text-left transition-all hover:bg-accent-100"
+                  >
+                    <div class="flex justify-between items-start">
+                      <div>
+                        <Text tag="p" variant="textBase" class="font-semibold text-accent-900">
+                          FarmEasy Smart Hub Pro
+                        </Text>
+                        <Text tag="p" variant="textSM" class="text-base-600 mt-1">
+                          Advanced 8-node support
+                        </Text>
+                      </div>
+                      <div class="text-right">
+                        <Text tag="p" variant="textSM" class="text-accent-900 font-medium">
+                          From $1099
+                        </Text>
+                        <Text tag="p" variant="textXS" class="text-base-600">
+                          or $45.79/mo.
+                        </Text>
+                      </div>
+                    </div>
+                  </button>
+
+                  <button
+                    type="button"
+                    data-model="standard"
+                    data-price="899"
+                    data-name="FarmEasy Smart Hub"
+                    class="model-btn w-full p-4 border-2 border-base-300 bg-white rounded-lg text-left transition-all hover:border-base-400 hover:bg-base-50"
+                  >
+                    <div class="flex justify-between items-start">
+                      <div>
+                        <Text tag="p" variant="textBase" class="font-semibold text-accent-900">
+                          FarmEasy Smart Hub
+                        </Text>
+                        <Text tag="p" variant="textSM" class="text-base-600 mt-1">
+                          Standard 4-node support
+                        </Text>
+                      </div>
+                      <div class="text-right">
+                        <Text tag="p" variant="textSM" class="text-accent-900 font-medium">
+                          From $899
+                        </Text>
+                        <Text tag="p" variant="textXS" class="text-base-600">
+                          or $37.45/mo.
+                        </Text>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <div>
+                <Text tag="h2" variant="displaySM" class="text-accent-900 font-display mb-6">
+                  Additional Sensors. Expand your monitoring.
+                </Text>
+                <div class="space-y-3">
+                  <div class="p-4 bg-white border border-base-200 rounded-lg" data-sensor="temperature" data-price="89">
+                    <div class="flex justify-between items-center">
+                      <div class="flex-1">
+                        <Text tag="p" variant="textBase" class="font-semibold text-accent-900">
+                          Temperature Sensor
+                        </Text>
+                        <Text tag="p" variant="textXS" class="text-base-600 mt-1">
+                          Precision temperature monitoring
+                        </Text>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-2 border border-base-300 rounded-lg">
+                          <button type="button" class="sensor-dec px-3 py-1 hover:bg-base-100 transition-colors" data-sensor="temperature">
+                            <Text tag="span" variant="textBase" class="text-base-700">−</Text>
+                          </button>
+                          <Text tag="span" variant="textSM" class="text-accent-900 font-medium w-8 text-center sensor-qty" data-sensor="temperature">
+                            0
+                          </Text>
+                          <button type="button" class="sensor-inc px-3 py-1 hover:bg-base-100 transition-colors" data-sensor="temperature">
+                            <Text tag="span" variant="textBase" class="text-base-700">+</Text>
+                          </button>
+                        </div>
+                        <Text tag="p" variant="textSM" class="text-accent-900 font-medium w-16 text-right">
+                          $89 ea.
+                        </Text>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="p-4 bg-white border border-base-200 rounded-lg" data-sensor="humidity" data-price="79">
+                    <div class="flex justify-between items-center">
+                      <div class="flex-1">
+                        <Text tag="p" variant="textBase" class="font-semibold text-accent-900">
+                          Humidity Sensor
+                        </Text>
+                        <Text tag="p" variant="textXS" class="text-base-600 mt-1">
+                          Track moisture levels in air
+                        </Text>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-2 border border-base-300 rounded-lg">
+                          <button type="button" class="sensor-dec px-3 py-1 hover:bg-base-100 transition-colors" data-sensor="humidity">
+                            <Text tag="span" variant="textBase" class="text-base-700">−</Text>
+                          </button>
+                          <Text tag="span" variant="textSM" class="text-accent-900 font-medium w-8 text-center sensor-qty" data-sensor="humidity">
+                            0
+                          </Text>
+                          <button type="button" class="sensor-inc px-3 py-1 hover:bg-base-100 transition-colors" data-sensor="humidity">
+                            <Text tag="span" variant="textBase" class="text-base-700">+</Text>
+                          </button>
+                        </div>
+                        <Text tag="p" variant="textSM" class="text-accent-900 font-medium w-16 text-right">
+                          $79 ea.
+                        </Text>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="p-4 bg-white border border-base-200 rounded-lg" data-sensor="solar" data-price="129">
+                    <div class="flex justify-between items-center">
+                      <div class="flex-1">
+                        <Text tag="p" variant="textBase" class="font-semibold text-accent-900">
+                          Solar Panel Sensor
+                        </Text>
+                        <Text tag="p" variant="textXS" class="text-base-600 mt-1">
+                          Monitor solar power output
+                        </Text>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-2 border border-base-300 rounded-lg">
+                          <button type="button" class="sensor-dec px-3 py-1 hover:bg-base-100 transition-colors" data-sensor="solar">
+                            <Text tag="span" variant="textBase" class="text-base-700">−</Text>
+                          </button>
+                          <Text tag="span" variant="textSM" class="text-accent-900 font-medium w-8 text-center sensor-qty" data-sensor="solar">
+                            0
+                          </Text>
+                          <button type="button" class="sensor-inc px-3 py-1 hover:bg-base-100 transition-colors" data-sensor="solar">
+                            <Text tag="span" variant="textBase" class="text-base-700">+</Text>
+                          </button>
+                        </div>
+                        <Text tag="p" variant="textSM" class="text-accent-900 font-medium w-16 text-right">
+                          $129 ea.
+                        </Text>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="p-4 bg-white border border-base-200 rounded-lg" data-sensor="soil" data-price="99">
+                    <div class="flex justify-between items-center">
+                      <div class="flex-1">
+                        <Text tag="p" variant="textBase" class="font-semibold text-accent-900">
+                          Soil Moisture Sensor
+                        </Text>
+                        <Text tag="p" variant="textXS" class="text-base-600 mt-1">
+                          Real-time soil moisture data
+                        </Text>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-2 border border-base-300 rounded-lg">
+                          <button type="button" class="sensor-dec px-3 py-1 hover:bg-base-100 transition-colors" data-sensor="soil">
+                            <Text tag="span" variant="textBase" class="text-base-700">−</Text>
+                          </button>
+                          <Text tag="span" variant="textSM" class="text-accent-900 font-medium w-8 text-center sensor-qty" data-sensor="soil">
+                            0
+                          </Text>
+                          <button type="button" class="sensor-inc px-3 py-1 hover:bg-base-100 transition-colors" data-sensor="soil">
+                            <Text tag="span" variant="textBase" class="text-base-700">+</Text>
+                          </button>
+                        </div>
+                        <Text tag="p" variant="textSM" class="text-accent-900 font-medium w-16 text-right">
+                          $99 ea.
+                        </Text>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <Text tag="h2" variant="displaySM" class="text-accent-900 font-display mb-6">
+                  Storage. How much space do you need?
+                </Text>
+                <div class="space-y-3">
+                  <button
+                    type="button"
+                    data-storage="128"
+                    data-price="0"
+                    data-name="128GB"
+                    class="storage-btn w-full p-4 border-2 border-accent-600 bg-accent-50 rounded-lg text-left transition-all hover:bg-accent-100"
+                  >
+                    <div class="flex justify-between items-center">
+                      <div>
+                        <Text tag="p" variant="textBase" class="font-semibold text-accent-900">
+                          128GB
+                        </Text>
+                        <Text tag="p" variant="textXS" class="text-base-600 mt-1">
+                          ~50,000 sensor readings
+                        </Text>
+                      </div>
+                      <Text tag="p" variant="textSM" class="text-accent-900 font-medium">
+                        Included
+                      </Text>
+                    </div>
+                  </button>
+
+                  <button
+                    type="button"
+                    data-storage="256"
+                    data-price="150"
+                    data-name="256GB"
+                    class="storage-btn w-full p-4 border-2 border-base-300 bg-white rounded-lg text-left transition-all hover:border-base-400 hover:bg-base-50"
+                  >
+                    <div class="flex justify-between items-center">
+                      <div>
+                        <Text tag="p" variant="textBase" class="font-semibold text-accent-900">
+                          256GB
+                        </Text>
+                        <Text tag="p" variant="textXS" class="text-base-600 mt-1">
+                          ~100,000 sensor readings
+                        </Text>
+                      </div>
+                      <Text tag="p" variant="textSM" class="text-accent-900 font-medium">
+                        +$150
+                      </Text>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <div>
+                <Text tag="h2" variant="displaySM" class="text-accent-900 font-display mb-6">
+                  Connectivity. Stay connected.
+                </Text>
+                <div class="space-y-3">
+                  <button
+                    type="button"
+                    data-connectivity="cellular"
+                    data-price="200"
+                    data-name="Wi-Fi + Cellular"
+                    class="connectivity-btn w-full p-4 border-2 border-accent-600 bg-accent-50 rounded-lg text-left transition-all hover:bg-accent-100"
+                  >
+                    <div class="flex justify-between items-center">
+                      <div>
+                        <Text tag="p" variant="textBase" class="font-semibold text-accent-900">
+                          Wi-Fi + Cellular
+                        </Text>
+                        <Text tag="p" variant="textXS" class="text-base-600 mt-1">
+                          4G LTE connectivity included
+                        </Text>
+                      </div>
+                      <Text tag="p" variant="textSM" class="text-accent-900 font-medium">
+                        +$200
+                      </Text>
+                    </div>
+                  </button>
+
+                  <button
+                    type="button"
+                    data-connectivity="wifi"
+                    data-price="0"
+                    data-name="Wi-Fi Only"
+                    class="connectivity-btn w-full p-4 border-2 border-base-300 bg-white rounded-lg text-left transition-all hover:border-base-400 hover:bg-base-50"
+                  >
+                    <div class="flex justify-between items-center">
+                      <div>
+                        <Text tag="p" variant="textBase" class="font-semibold text-accent-900">
+                          Wi-Fi Only
+                        </Text>
+                        <Text tag="p" variant="textXS" class="text-base-600 mt-1">
+                          Connect via Wi-Fi network
+                        </Text>
+                      </div>
+                      <Text tag="p" variant="textSM" class="text-accent-900 font-medium">
+                        Included
+                      </Text>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <div>
+                <Text tag="h2" variant="displaySM" class="text-accent-900 font-display mb-6">
+                  Add Accessories
+                </Text>
+                
+                <div class="space-y-3">
+                  <div class="flex items-center gap-3 p-3 bg-white border border-base-200 rounded-lg">
+                    <input type="checkbox" id="solar-panel" data-price="249" data-name="50W Solar Panel Kit" class="accessory-checkbox w-5 h-5 text-accent-600 rounded" />
+                    <label for="solar-panel" class="flex-1 cursor-pointer">
+                      <Text tag="p" variant="textSM" class="text-accent-900 font-medium">
+                        50W Solar Panel Kit
+                      </Text>
+                      <Text tag="p" variant="textXS" class="text-base-600">
+                        Extended power backup
+                      </Text>
+                    </label>
+                    <Text tag="p" variant="textSM" class="text-accent-900 font-medium">
+                      +$249
+                    </Text>
+                  </div>
+
+                  <div class="flex items-center gap-3 p-3 bg-white border border-base-200 rounded-lg">
+                    <input type="checkbox" id="mounting-kit" data-price="79" data-name="Mounting Kit" class="accessory-checkbox w-5 h-5 text-accent-600 rounded" />
+                    <label for="mounting-kit" class="flex-1 cursor-pointer">
+                      <Text tag="p" variant="textSM" class="text-accent-900 font-medium">
+                        Weather-Proof Mounting Kit
+                      </Text>
+                      <Text tag="p" variant="textXS" class="text-base-600">
+                        Outdoor installation hardware
+                      </Text>
+                    </label>
+                    <Text tag="p" variant="textSM" class="text-accent-900 font-medium">
+                      +$79
+                    </Text>
+                  </div>
+
+                  <div class="flex items-center gap-3 p-3 bg-white border border-base-200 rounded-lg">
+                    <input type="checkbox" id="sensor-pack" data-price="399" data-name="Sensor Starter Pack (4x)" class="accessory-checkbox w-5 h-5 text-accent-600 rounded" />
+                    <label for="sensor-pack" class="flex-1 cursor-pointer">
+                      <Text tag="p" variant="textSM" class="text-accent-900 font-medium">
+                        Sensor Starter Pack (4x)
+                      </Text>
+                      <Text tag="p" variant="textXS" class="text-base-600">
+                        Soil moisture & temperature sensors
+                      </Text>
+                    </label>
+                    <Text tag="p" variant="textSM" class="text-accent-900 font-medium">
+                      +$399
+                    </Text>
+                  </div>
+
+                  <div class="flex items-center gap-3 p-3 bg-white border border-base-200 rounded-lg">
+                    <input type="checkbox" id="extended-warranty" data-price="199" data-name="3-Year Extended Warranty" class="accessory-checkbox w-5 h-5 text-accent-600 rounded" />
+                    <label for="extended-warranty" class="flex-1 cursor-pointer">
+                      <Text tag="p" variant="textSM" class="text-accent-900 font-medium">
+                        3-Year Extended Warranty
+                      </Text>
+                      <Text tag="p" variant="textXS" class="text-base-600">
+                        Complete coverage & support
+                      </Text>
+                    </label>
+                    <Text tag="p" variant="textSM" class="text-accent-900 font-medium">
+                      +$199
+                    </Text>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:sticky lg:top-24 lg:self-start">
+              <div class="bg-base-50 p-6 rounded-lg border border-base-200">
+                <Image
+                  src={iotHubBlack}
+                  alt="FarmEasy Smart Hub Pro in Midnight Black"
+                  class="w-full h-64 object-cover rounded-lg mb-6"
+                  loading="eager"
+                  decoding="async"
+                />
+
+                <div class="space-y-4">
+                  <div>
+                    <Text tag="p" variant="textXS" class="text-base-600 uppercase tracking-wider">
+                      Your Selection
+                    </Text>
+                    <Text tag="h3" variant="textXL" class="text-accent-900 font-display mt-1" id="sidebar-model">
+                      FarmEasy Smart Hub Pro
+                    </Text>
+                    <Text tag="p" variant="textSM" class="text-base-700 mt-1" id="sidebar-config">
+                      128GB • Wi-Fi + Cellular
+                    </Text>
+                  </div>
+
+                  <div class="pt-4 border-t border-base-300" id="price-breakdown">
+                    <!-- Price breakdown will be populated by JavaScript -->
+                  </div>
+
+                  <div class="pt-4">
+                    <div class="bg-secondary-100 border border-secondary-300 rounded-lg p-4 text-center">
+                      <Text tag="p" variant="textXL" class="text-secondary-800 font-display font-semibold">
+                        Coming Soon in Q4 2026
+                      </Text>
+                      <Text tag="p" variant="textSM" class="text-secondary-700 mt-2">
+                        Be the first to know when it's available
+                      </Text>
+                    </div>
+
+                    <Button
+                      isLink={false}
+                      variant="default"
+                      size="md"
+                      class="w-full mt-4"
+                    >
+                      Notify Me When Available
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 text-center">
+          <Text tag="p" variant="textXS" class="text-base-600">
+            * Monthly pricing requires activation with carrier and is subject to credit approval.
+          </Text>
+          <Text tag="p" variant="textXS" class="text-base-600 mt-1">
+            Pre-order reservations will be accepted starting Q2 2026.
+          </Text>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+</BaseLayout>
+
+<script>
+  // Configuration state
+  const state = {
+    model: { id: 'pro', name: 'FarmEasy Smart Hub Pro', price: 1099 },
+    storage: { id: '128', name: '128GB', price: 0 },
+    connectivity: { id: 'cellular', name: 'Wi-Fi + Cellular', price: 200 },
+    sensors: {
+      temperature: { qty: 0, price: 89, name: 'Temperature Sensor' },
+      humidity: { qty: 0, price: 79, name: 'Humidity Sensor' },
+      solar: { qty: 0, price: 129, name: 'Solar Panel Sensor' },
+      soil: { qty: 0, price: 99, name: 'Soil Moisture Sensor' }
+    },
+    accessories: []
+  };
+
+  // Utility functions
+  function formatPrice(price) {
+    return `$${price.toLocaleString()}`;
+  }
+
+  function toggleButtonSelection(clickedButton, groupClass) {
+    const buttons = document.querySelectorAll(`.${groupClass}`);
+    buttons.forEach(btn => {
+      btn.classList.remove('border-accent-600', 'bg-accent-50');
+      btn.classList.add('border-base-300', 'bg-white');
+    });
+    clickedButton.classList.remove('border-base-300', 'bg-white');
+    clickedButton.classList.add('border-accent-600', 'bg-accent-50');
+  }
+
+  function updateSidebar() {
+    // Update model name
+    document.getElementById('sidebar-model').textContent = state.model.name;
+
+    // Update config line
+    const config = `${state.storage.name} • ${state.connectivity.name}`;
+    document.getElementById('sidebar-config').textContent = config;
+
+    // Calculate total price
+    let total = state.model.price + state.storage.price + state.connectivity.price;
+
+    // Add sensor costs
+    const sensorTotal = Object.values(state.sensors).reduce((sum, sensor) => {
+      return sum + (sensor.qty * sensor.price);
+    }, 0);
+    total += sensorTotal;
+
+    // Add accessory costs
+    const accessoryTotal = state.accessories.reduce((sum, acc) => sum + acc.price, 0);
+    total += accessoryTotal;
+
+    // Build price breakdown HTML
+    let breakdownHTML = '';
+
+    // Base model
+    breakdownHTML += `
+      <div class="flex justify-between items-center mb-2">
+        <p class="text-base text-base-700">${state.model.name.replace('FarmEasy ', '')}</p>
+        <p class="text-base text-base-900 font-medium">${formatPrice(state.model.price)}</p>
+      </div>
+    `;
+
+    // Storage upgrade (if not base)
+    if (state.storage.price > 0) {
+      breakdownHTML += `
+        <div class="flex justify-between items-center mb-2">
+          <p class="text-base text-base-700">${state.storage.name} Storage</p>
+          <p class="text-base text-base-900 font-medium">${formatPrice(state.storage.price)}</p>
+        </div>
+      `;
+    }
+
+    // Connectivity upgrade (if not base)
+    if (state.connectivity.price > 0) {
+      breakdownHTML += `
+        <div class="flex justify-between items-center mb-2">
+          <p class="text-base text-base-700">Cellular Connectivity</p>
+          <p class="text-base text-base-900 font-medium">${formatPrice(state.connectivity.price)}</p>
+        </div>
+      `;
+    }
+
+    // Sensors
+    Object.values(state.sensors).forEach(sensor => {
+      if (sensor.qty > 0) {
+        breakdownHTML += `
+          <div class="flex justify-between items-center mb-2">
+            <p class="text-base text-base-700">${sensor.name} (${sensor.qty}x)</p>
+            <p class="text-base text-base-900 font-medium">${formatPrice(sensor.qty * sensor.price)}</p>
+          </div>
+        `;
+      }
+    });
+
+    // Accessories
+    state.accessories.forEach(acc => {
+      breakdownHTML += `
+        <div class="flex justify-between items-center mb-2">
+          <p class="text-base text-base-700">${acc.name}</p>
+          <p class="text-base text-base-900 font-medium">${formatPrice(acc.price)}</p>
+        </div>
+      `;
+    });
+
+    // Total
+    breakdownHTML += `
+      <div class="flex justify-between items-center pt-4 border-t border-base-300">
+        <p class="text-lg text-accent-900 font-semibold">Total</p>
+        <p class="text-lg text-accent-900 font-semibold">${formatPrice(total)}</p>
+      </div>
+    `;
+
+    document.getElementById('price-breakdown').innerHTML = breakdownHTML;
+  }
+
+  // Model selection
+  document.querySelectorAll('.model-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      state.model = {
+        id: btn.dataset.model,
+        name: btn.dataset.name,
+        price: parseInt(btn.dataset.price)
+      };
+      toggleButtonSelection(btn, 'model-btn');
+      updateSidebar();
+    });
+  });
+
+  // Storage selection
+  document.querySelectorAll('.storage-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      state.storage = {
+        id: btn.dataset.storage,
+        name: btn.dataset.name,
+        price: parseInt(btn.dataset.price)
+      };
+      toggleButtonSelection(btn, 'storage-btn');
+      updateSidebar();
+    });
+  });
+
+  // Connectivity selection
+  document.querySelectorAll('.connectivity-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      state.connectivity = {
+        id: btn.dataset.connectivity,
+        name: btn.dataset.name,
+        price: parseInt(btn.dataset.price)
+      };
+      toggleButtonSelection(btn, 'connectivity-btn');
+      updateSidebar();
+    });
+  });
+
+  // Sensor quantity controls
+  document.querySelectorAll('.sensor-inc').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const sensorType = btn.dataset.sensor;
+      state.sensors[sensorType].qty++;
+      document.querySelector(`.sensor-qty[data-sensor="${sensorType}"]`).textContent = state.sensors[sensorType].qty;
+      updateSidebar();
+    });
+  });
+
+  document.querySelectorAll('.sensor-dec').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const sensorType = btn.dataset.sensor;
+      if (state.sensors[sensorType].qty > 0) {
+        state.sensors[sensorType].qty--;
+        document.querySelector(`.sensor-qty[data-sensor="${sensorType}"]`).textContent = state.sensors[sensorType].qty;
+        updateSidebar();
+      }
+    });
+  });
+
+  // Accessory checkboxes
+  document.querySelectorAll('.accessory-checkbox').forEach(checkbox => {
+    checkbox.addEventListener('change', (e) => {
+      const price = parseInt(checkbox.dataset.price);
+      const name = checkbox.dataset.name;
+      
+      if (e.target.checked) {
+        state.accessories.push({ name, price });
+      } else {
+        state.accessories = state.accessories.filter(acc => acc.name !== name);
+      }
+      updateSidebar();
+    });
+  });
+
+  // Initialize sidebar on page load
+  updateSidebar();
+</script>
