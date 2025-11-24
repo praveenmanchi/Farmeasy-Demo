@@ -1,31 +1,32 @@
 ---
 name: John Sullivan
-title: Partner
-bio: Seasoned corporate attorney specializing in mergers and acquisitions.
-experience: Over 15 years representing Fortune 500 companies.
+title: Chief Operating Officer
+bio: Agricultural operations leader specializing in scaling precision farming technology deployments.
+experience: Over 15 years leading agricultural technology companies and farm operations.
 education:
-  - J.D., Harvard Law School
-  - B.A., Columbia University
-barAdmissions:
-  - New York
-  - California
+  - MBA, Stanford Graduate School of Business
+  - B.S., Agricultural Business Management, Cornell University
+certifications:
+  - Certified Crop Advisor (CCA)
+  - Lean Six Sigma Black Belt
 specialties:
-  - Corporate Law
-  - Mergers & Acquisitions
-  - Business Compliance
+  - Farm Operations Management
+  - AgTech Deployment & Scaling
+  - Supply Chain Optimization
+  - Agricultural Business Strategy
 image:
   url: "/src/images/team/jon-sullivan.jpg"
   alt: John Sullivan portrait
 contact:
-  email: john@lexfordlaw.com
-  phone: +0 (000) 000-000
-  location: New York Office
+  email: john@farmeasy.ag
+  phone: +1 (916) 555-0100
+  location: Sacramento Office
 socials:
   linkedin: "#_"
 ---
-John leads the **Corporate Law and M&A division** at Carrington&CO.  
-He has represented multinational corporations in multi-billion-dollar mergers, acquisitions, and complex restructuring deals.  
+John leads the **Operations and Customer Success division** at FarmEasy.  
+He has overseen technology deployments across thousands of farms, from small family vineyards to multi-thousand-acre commercial operations.  
 
-Before joining Lexford, John worked as senior counsel at **White & Case LLP**, where he specialized in cross-border negotiations and compliance frameworks.
+Before joining FarmEasy, John served as VP of Operations at **Trimble Agriculture**, where he specialized in precision farming hardware rollouts and farmer training programs.
 
-Beyond his legal practice, he mentors young attorneys and contributes to legal journals on **emerging governance models**.
+Beyond his operational work, he mentors agtech startups and contributes to agricultural publications on **sustainable farm management** and **technology adoption strategies**.

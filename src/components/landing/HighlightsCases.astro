@@ -36,35 +36,8 @@ const casesCount = allCases.length;
         </Text>
       </div>
     </div>
-    <div class="grid grid-cols-1 lg:grid-cols-2 mt-12 lg:mt-24 gap-8">
-      {allCases.slice(0, 2).map((caseStudy) => <CasesCard post={caseStudy} />)}
-    </div>
-    <div class="bg-white p-8 lg:p-12 mt-8">
-      <div
-        class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6"
-      >
-        <div>
-          <Text
-            tag="h3"
-            variant="displaySM"
-            class="text-accent-800 font-display"
-          >
-            Explore all success stories
-          </Text>
-          <Text tag="p" variant="textSM" class="text-base-600 mt-1">
-            Dive into {casesCount}+ detailed farm transformations and measurable results.
-          </Text>
-        </div>
-        <Button
-          isLink={true}
-          href="/cases"
-          variant="muted"
-          size="sm"
-          class="w-full lg:w-fit"
-        >
-          View all success stories
-        </Button>
-      </div>
+    <div class="grid grid-cols-1 lg:grid-cols-1 mt-12 lg:mt-24 gap-8 max-w-5xl mx-auto">
+      {allCases.slice(0, 1).map((caseStudy) => <CasesCard post={caseStudy} />)}
     </div>
   </Wrapper>
 </section>

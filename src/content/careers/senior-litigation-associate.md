@@ -1,95 +1,53 @@
 ---
-title: Senior Litigation Associate
-
-location: Los Angeles, CA
+title: Senior IoT Systems Engineer
+location: Sacramento, CA
 type: Full-time
-remote: On-site
+remote: Hybrid
 postedDate: 2025-09-20
 salary: $140,000 - $170,000 + bonus
-description: Handle complex civil litigation matters and represent clients in court.
+description: Design and deploy IoT sensor networks for precision agriculture applications across diverse farm operations.
 responsibilities:
-  - Manage civil litigation cases from inception to resolution
-  - Conduct legal research and draft pleadings
-  - Take and defend depositions
-  - Present oral arguments in court
-  - Negotiate settlements and plea agreements
+  - Design end-to-end IoT systems for agricultural monitoring
+  - Deploy and commission sensor networks on customer farms
+  - Troubleshoot hardware and connectivity issues in field environments
+  - Collaborate with data science team on sensor calibration
+  - Mentor junior engineers and installation technicians
 requirements:
-  - 5+ years litigation experience
-  - Trial experience preferred
-  - Admitted to CA State Bar
-  - Strong analytical and writing skills
+  - 5+ years IoT systems engineering experience
+  - Strong background in embedded systems and wireless networking
+  - Experience with LoRaWAN, cellular IoT, or satellite connectivity
+  - Comfortable working in outdoor agricultural environments
 benefits:
   - Health, dental, vision insurance
-  - Retirement plan with match
-  - Professional liability insurance
-  - Continuing legal education support
-  - Commuter benefits
+  - Retirement plan with 6% company match
+  - Professional development budget
+  - Company vehicle for field work
+  - Stock options
 applyUrl: "#_"
-applyEmail: careers@lexfordlaw.com
+applyEmail: careers@farmeasy.ag
 tags:
-  - Litigation
-  - Trial
-  - Civil Law
+  - IoT Engineering
+  - Embedded Systems
+  - Agriculture
 ---
 
+# Senior IoT Systems Engineer
 
-# Senior Litigation Associate
-
-Carrington Law seeks a Senior Litigation Associate to lead complex cases and mentor junior attorneys. You’ll represent clients in high-stakes disputes, from pre-trial strategy to courtroom advocacy.
+FarmEasy seeks a Senior IoT Systems Engineer to lead deployments of our precision agriculture monitoring systems. You'll work directly with farmers to design, install, and optimize sensor networks that increase yields and conserve water.
 
 ## Responsibilities
-- Manage all phases of litigation, including discovery, motions, and trial
-- Develop case strategy and advise clients
-- Draft pleadings, briefs, and legal memoranda
-- Supervise and train junior associates and paralegals
+- Design customized IoT architectures for farms ranging from 50 to 5,000+ acres
+- Lead installation teams deploying sensors, gateways, and communication infrastructure
+- Debug connectivity issues in remote agricultural environments
+- Collaborate with agronomists to ensure sensors meet crop-specific requirements
+- Document systems and train customers on equipment maintenance
 
 ## Qualifications
-- JD and active bar membership
-- 5+ years of litigation experience
-- Excellent research, writing, and oral advocacy skills
-- Proven leadership and case management abilities
+- Bachelor's degree in Electrical Engineering, Computer Engineering, or related field
+- 5+ years designing and deploying IoT systems at scale
+- Expertise in low-power wireless protocols and edge computing
+- Strong problem-solving skills for field troubleshooting
+- Excellent communication skills for customer interactions
 
 ## What We Offer
-Competitive compensation, professional development, and a collaborative team environment. Shape the future of litigation at Farm Easy
-location: Los Angeles, CA
-type: Full-time
-remote: On-site
-postedDate: 2025-09-20
-salary: $140,000 - $170,000 + bonus
-description: Handle complex civil litigation matters and represent clients in court.
-responsibilities:
-  - Manage civil litigation cases from inception to resolution
-  - Conduct legal research and draft pleadings
-  - Take and defend depositions
-  - Present oral arguments in court
-  - Negotiate settlements and plea agreements
-requirements:
-  - 5+ years litigation experience
-  - Trial experience preferred
-  - Admitted to CA State Bar
-  - Strong analytical and writing skills
-benefits:
-  - Health, dental, vision insurance
-  - Retirement plan with match
-  - Professional liability insurance
-  - Continuing legal education support
-  - Commuter benefits
-applyUrl: "#_"
-applyEmail: careers@lexfordlaw.com
-tags:
-  - Litigation
-  - Trial
-  - Civil Law
----
-
-## Trial Experience Required
-
-We're looking for a skilled litigator to join our trial team. This role involves handling complex civil matters, from contract disputes to business torts, with opportunities for courtroom advocacy.
-
-## Courtroom Advocacy
-
-Our litigation associates regularly appear in state and federal courts, presenting compelling arguments and achieving favorable outcomes for our clients.
-
-## Professional Development
-
-We invest in our attorneys' growth through mentorship programs, CLE opportunities, and exposure to diverse practice areas.
+Competitive compensation, hands-on engineering challenges, and the opportunity to make real environmental impact. See your work helping farms become more sustainable and profitable.

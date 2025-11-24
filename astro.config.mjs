@@ -4,14 +4,14 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   server: {
-    port: 5173,
+    port: 5000,
     host: '0.0.0.0'
   },
   vite: {
     plugins: [tailwindcss()],
     server: {
       host: '0.0.0.0',
-      port: 5173,
+      port: 5000,
       strictPort: true,
       allowedHosts: [
         'localhost',
@@ -20,7 +20,7 @@ export default defineConfig({
         '.repl.co'
       ],
       hmr: {
-        clientPort: 5173
+        clientPort: 5000
       }
     }
   },

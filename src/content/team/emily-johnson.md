@@ -1,54 +1,55 @@
 ---
 name: Emily Johnson
-title: Family Law Associate
-bio: Compassionate family law attorney dedicated to helping families navigate difficult transitions with dignity.
-experience: 8 years specializing in divorce, custody, and family mediation with a focus on collaborative solutions.
+title: Customer Success Manager
+bio: Dedicated to ensuring farmers get maximum value from their precision agriculture investments.
+experience: 8 years helping agricultural operations implement and optimize technology solutions for improved profitability.
 education:
-  - J.D., Georgetown University Law Center
-  - M.S.W., Social Work, Catholic University
-  - B.A., Psychology, George Washington University
-barAdmissions:
-  - District of Columbia
-  - Maryland
-  - Virginia
+  - M.S., Agricultural Economics, Texas A&M University
+  - B.S., Farm & Ranch Management, California Polytechnic State University
+certifications:
+  - Certified Crop Advisor (CCA)
+  - Customer Success Manager Certification
+  - Precision Agriculture Specialist
 specialties:
-  - Divorce and Separation
-  - Child Custody and Support
-  - Domestic Partnerships
-  - Family Mediation
+  - Farm Technology Training
+  - ROI Analysis & Optimization
+  - Customer Onboarding
+  - Agricultural Consulting
 image:
   url: "/src/images/team/emily-johnson.jpg"
   alt: Emily Johnson portrait
 contact:
-  email: emily@lexfordlaw.com
-  phone: +1 (202) 555-0789
-  location: Washington, DC Office
+  email: emily@farmeasy.ag
+  phone: +1 (916) 555-0789
+  location: Sacramento Office
 socials:
   linkedin: "#_"
 
 ---
 
-Emily Johnson combines her legal expertise with a background in social work to provide compassionate representation in family law matters. She believes in finding solutions that prioritize the best interests of children and families.
+Emily Johnson combines her agricultural background with customer success expertise to help farmers get the most from their FarmEasy systems. She believes technology should make farming easier, not more complicated, and focuses on practical, profit-driven implementations.
 
-## Approach to Family Law
+## Approach to Customer Success
 
-Emily emphasizes mediation and collaborative divorce whenever possible, helping families avoid the adversarial nature of traditional litigation. Her goal is to minimize conflict and emotional trauma during difficult transitions.
+Emily emphasizes hands-on training and ongoing support to ensure farmers are comfortable using their systems. Her goal is to help every customer achieve positive ROI within their first growing season.
 
 ## Areas of Focus
 
-- High-conflict custody disputes
-- Complex property division involving businesses
-- International family law matters
-- LGBTQ+ family formation and protection
+- System optimization for specific crop types
+- Training farmers and farm staff on data interpretation
+- Identifying additional opportunities for automation
+- Long-term relationship building with grower communities
 
-## Professional Recognition
+## Customer Impact
 
-- AV Preeminent Rating from Martindale-Hubbell
-- Selected for Super Lawyers "Rising Stars" list
-- Certified Family Law Mediator
+- Maintained 98% customer retention rate over 4 years
+- Helped customers achieve average 3.2x ROI in first 3 years
+- Conducted over 200 on-farm training sessions
+- Created educational video series viewed by 50,000+ farmers
 
-## Community Service
+## Community Engagement
 
-- Volunteer guardian ad litem for DC Family Court
-- Board member of local domestic violence shelter
-- Pro bono representation for underserved families
+- Regular speaker at regional farm conferences
+- Contributor to agricultural technology publications
+- Volunteer advisor for beginning farmer programs
+- Mentor for women in agriculture leadership program

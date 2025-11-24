@@ -1,26 +1,26 @@
 ---
-title: "Carrington law opens new chicago office to better serve midwest clients"
+title: "FarmEasy opens new midwest regional office to serve corn belt farmers"
 pubDate: 2024-09-15
 category: "Business Development"
-excerpt: "Carrington Law announces the opening of its new Chicago office, expanding the firm's presence in the Midwest and enhancing client service capabilities."
+excerpt: "FarmEasy announces the opening of its new Des Moines office, expanding the company's presence in the Corn Belt and enhancing customer service capabilities for row crop operations."
 ---
 
 
 
-**Chicago, IL – September 15, 2024** – Carrington Law is excited to announce the opening of its new Chicago office, strengthening the firm's presence in the Midwest and providing enhanced legal services to clients throughout the region.
+**Des Moines, IA – September 15, 2024** – FarmEasy is excited to announce the opening of its new Midwest regional office in Des Moines, Iowa, strengthening the company's presence in America's agricultural heartland and providing enhanced precision farming services to row crop producers throughout the region.
 
 ## Office Expansion Details
 
-- **Strategic Location**: Prime downtown Chicago location with state-of-the-art facilities
-- **Expanded Team**: Addition of experienced attorneys specializing in corporate and business law
-- **Regional Focus**: Dedicated service to Midwest businesses and organizations
-- **Integrated Services**: Seamless coordination with New York and Los Angeles offices
+- **Strategic Location**: Prime Des Moines location providing easy access to Iowa, Illinois, Nebraska, and Minnesota growers
+- **Expanded Team**: Addition of experienced agronomists specializing in corn and soybean production systems
+- **Regional Focus**: Dedicated service to row crop operations and specialty crop growers
+- **Integrated Services**: Seamless coordination with Sacramento headquarters and field support teams
 
-"The Chicago office represents our continued commitment to providing exceptional legal services to clients wherever they do business," said Managing Partner Jonathan Sullivan. "This expansion allows us to better serve our Midwest clients and strengthen our national presence."
+"The Des Moines office represents our continued commitment to serving America's farmers wherever they grow," said COO John Sullivan. "This expansion allows us to better support our Midwest customers with local expertise and faster response times."
 
-The new office will focus on corporate law, business transactions, employment law, and litigation matters, serving clients across Illinois, Indiana, Wisconsin, and surrounding states.
+The new office will provide on-farm technical support, agronomic consulting, sensor installation services, and farmer training programs across Iowa, Illinois, Nebraska, Minnesota, Wisconsin, and surrounding states.
 
-For more information about Carrington Law's Chicago office, visit [carringtonlaw.com/offices](https://carringtonlaw.com/offices).
+For more information about FarmEasy's Midwest operations, visit [farmeasy.com/midwest](https://farmeasy.com/midwest).
 
-**About Carrington Law**  
-Carrington Law is a full-service law firm specializing in corporate, litigation, and business law. With offices in New York, Los Angeles, and Chicago, the firm serves clients nationwide.
+**About FarmEasy**  
+FarmEasy is a leading agricultural IoT company specializing in precision farming, soil monitoring, and irrigation automation. With offices in California and Iowa, the company serves thousands of farms across North America.

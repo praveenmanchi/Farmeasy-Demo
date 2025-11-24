@@ -1,46 +1,53 @@
 ---
-title: Associate Attorney (M&A)
-location: New York, NY
+title: Agronomist
+location: Des Moines, IA
 type: Full-time
 remote: On-site
 postedDate: 2025-08-01
 salary: Competitive + bonus
-description: Join our expanding M&A team supporting complex cross-border transactions.
+description: Provide agronomic consulting to farmers using FarmEasy precision agriculture systems across Midwest row crop operations.
 responsibilities:
-  - Draft and negotiate transaction documents
-  - Support due diligence and closings
+  - Interpret sensor data and provide crop management recommendations
+  - Conduct on-farm consultations and field scouting
+  - Develop customized fertilizer and irrigation strategies
+  - Train farmers on precision agriculture best practices
 requirements:
-  - 3–5 years M&A experience
-  - Admitted to NY Bar
+  - 3–5 years agronomic consulting experience
+  - Certified Crop Advisor (CCA) required
+  - Strong knowledge of corn and soybean production
 benefits:
   - Health, dental, vision
   - 401(k) with match
+  - Company vehicle and fuel card
+  - CCA continuing education support
 applyUrl: "#_"
-applyEmail: careers@lexfordlaw.com
+applyEmail: careers@farmeasy.ag
 tags:
-  - M&A
-  - Mid-level
+  - Agronomy
+  - Consulting
+  - Midwest
 ---
 
+# Agronomist – Row Crop Specialist
 
-# Associate Attorney – Mergers & Acquisitions
-
-Join Carrington Law as an Associate Attorney specializing in M&A. You’ll work with a dynamic team on high-profile transactions, providing strategic legal counsel to clients in diverse industries.
+Join FarmEasy as an Agronomist supporting corn and soybean growers across Iowa, Illinois, and Nebraska. You'll translate sensor data into actionable crop management recommendations that increase profitability and sustainability.
 
 ## Responsibilities
 
-- Draft, review, and negotiate contracts and transaction documents
-- Conduct due diligence and risk analysis
-- Advise clients on deal structure and regulatory compliance
-- Collaborate with senior attorneys and clients throughout the transaction lifecycle
+- Conduct on-farm visits to assess crop health and review sensor data with growers
+- Develop site-specific nutrient and irrigation recommendations
+- Help farmers optimize input costs based on real-time field data
+- Provide technical support during planting and growing seasons
+- Document customer interactions and track crop performance
 
 ## Qualifications
 
-- Juris Doctor (JD) degree and bar admission
-- 2+ years of experience in M&A or corporate law
-- Strong analytical, communication, and negotiation skills
-- Ability to manage multiple projects in a fast-paced environment
+- Bachelor's degree in Agronomy, Crop Science, or Soil Science
+- Certified Crop Advisor (CCA) certification required
+- 3+ years experience in agronomic consulting or farm management
+- Strong understanding of precision agriculture tools and variable rate technology
+- Excellent communication skills for farmer education
 
-## Why Carrington Law?
+## Why FarmEasy?
 
-We offer mentorship, growth opportunities, and exposure to complex deals. Join us to advance your career and make a real impact.
+Work with cutting-edge technology while staying connected to agriculture. Help farmers make data-driven decisions that improve their bottom line and environmental stewardship. Competitive salary, excellent benefits, and opportunity to work with innovative growers.

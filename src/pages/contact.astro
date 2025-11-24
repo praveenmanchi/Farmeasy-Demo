@@ -168,22 +168,24 @@ const businessHours = [
           </div>
           <div class="space-y-1">
             <label
-              for="practiceArea"
+              for="farmSize"
               class="block text-xs font-medium text-base-300"
             >
-              Expertise Area
+              Farm Size / Area of Interest
             </label>
             <select
-              id="practiceArea"
-              name="practiceArea"
+              id="farmSize"
+              name="farmSize"
               class="w-full px-3 py-2 border-b border-transparent h-12 bg-white/5 focus:outline-none focus:bg-white/8 text-white text-xs focus:ring-0"
             >
-              <option value="">Select a practice area</option>
-              <option value="corporate">Agriculture</option>
-              <option value="criminal">IoT</option>
-              <option value="family">Solar</option>
-              <option value="personal-injury">Automation</option>
-              <option value="real-estate">Other</option>
+              <option value="">Select an option</option>
+              <option value="small">Small Farm (Under 100 acres)</option>
+              <option value="medium">Medium Farm (100-500 acres)</option>
+              <option value="large">Large Farm (500+ acres)</option>
+              <option value="commercial">Commercial Operation (1000+ acres)</option>
+              <option value="greenhouse">Greenhouse / Indoor</option>
+              <option value="research">Research / Academic</option>
+              <option value="other">Other</option>
             </select>
           </div>
           <div class="space-y-1">
@@ -198,7 +200,7 @@ const businessHours = [
               name="message"
               rows="5"
               required
-              placeholder="Please describe your legal matter..."
+              placeholder="Tell us about your farm and how we can help..."
               class="w-full px-3 py-2 border-b border-transparent bg-white/5 focus:outline-none focus:bg-white/8 text-white text-xs focus:ring-0"
             ></textarea>
           </div>

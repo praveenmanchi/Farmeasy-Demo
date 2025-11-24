@@ -3,347 +3,637 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import Wrapper from "@/components/fundations/containers/Wrapper.astro";
 import Text from "@/components/fundations/elements/Text.astro";
 import Button from "@/components/fundations/elements/Button.astro";
-import Cta from "@/components/global/Cta.astro";
 
-const pageTitle = "Secure Dashboards | FarmEasy";
-const pageDescription = "Intuitive analytics platform with enterprise-grade security. Access real-time farm data from any device, anywhere.";
+const pageTitle = "Analytics Platform | FarmEasy";
+const pageDescription = "Agricultural analytics and visualization platform for data-driven farm management.";
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription}>
   <!-- Hero Section -->
-  <section class="relative overflow-hidden bg-gradient-to-b from-blue-50 to-white">
+  <section class="relative overflow-hidden bg-gradient-to-b from-green-900 via-green-800 to-green-900 text-white">
     <Wrapper>
-      <div class="py-20 lg:py-32">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <div class="inline-block px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-6">
-              Analytics Platform
-            </div>
-            <h1 class="text-4xl lg:text-6xl font-bold text-base-900 mb-6">
-              Secure Dashboards
-            </h1>
-            <Text size="xl" class="mb-8">
-              Transform raw sensor data into actionable insights with our intuitive analytics platform. Monitor your entire operation from desktop or mobile with bank-level security.
-            </Text>
-            <div class="flex flex-wrap gap-4">
-              <Button href="/free-consultation" variant="primary">
-                Get Started
-              </Button>
-              <Button href="/contact" variant="outline">
-                Schedule Demo
-              </Button>
-            </div>
-          </div>
-          <div class="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden bg-base-100 shadow-2xl">
-            <video
-              autoplay
-              loop
-              muted
-              playsinline
-              class="absolute inset-0 w-full h-full object-cover"
-            >
-              <source src="/videos/dashboard.mp4" type="video/mp4" />
-            </video>
+      <div class="py-24 lg:py-32">
+        <div class="max-w-4xl">
+          <Text tag="h1" variant="displayXL" class="font-display text-white mb-6">
+            Agricultural analytics that drives smarter decisions
+          </Text>
+          <Text tag="p" variant="displaySM" class="text-green-100 mb-8 font-light max-w-3xl">
+            Transform raw farm data into actionable insights. Monitor soil conditions, track crop health, optimize irrigation, and maximize yields with real-time analytics and predictive intelligence.
+          </Text>
+          <div class="flex flex-wrap gap-4">
+            <Button href="/contact" variant="accent" size="lg">
+              Contact Sales
+            </Button>
+            <Button href="/buy-iot-hub" variant="muted" size="lg">
+              Try Free Demo
+            </Button>
           </div>
         </div>
       </div>
     </Wrapper>
+    
+    <!-- Hero Image -->
+    <Wrapper>
+      <div class="pb-16">
+        <img 
+          src="/attached_assets/stock_images/analytics_dashboard__804cbbec.jpg" 
+          alt="Analytics Dashboard Interface"
+          class="rounded-xl shadow-2xl w-full"
+        />
+      </div>
+    </Wrapper>
   </section>
 
-  <!-- Key Features -->
+  <!-- Social Proof / Trust Section -->
   <section class="py-20 bg-white">
-    <Wrapper>
-      <div class="text-center mb-16">
-        <h2 class="text-3xl lg:text-5xl font-bold text-base-900 mb-4">
-          Your Farm Command Center
-        </h2>
-        <Text size="lg" class="max-w-2xl mx-auto">
-          Everything you need to monitor, analyze, and optimize your farm operations in one secure platform.
-        </Text>
-      </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Feature 1 -->
-        <div class="bg-base-50 p-8 rounded-xl">
-          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center mb-4 text-2xl">
-            📊
-          </div>
-          <h3 class="text-xl font-bold text-base-900 mb-3">Real-Time Visualization</h3>
-          <Text>
-            Interactive charts and graphs update live as sensors collect data, giving you instant visibility into conditions.
-          </Text>
-        </div>
-
-        <!-- Feature 2 -->
-        <div class="bg-base-50 p-8 rounded-xl">
-          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center mb-4 text-2xl">
-            🔔
-          </div>
-          <h3 class="text-xl font-bold text-base-900 mb-3">Custom Alerts</h3>
-          <Text>
-            Set thresholds for any metric and receive instant notifications via SMS, email, or push notification.
-          </Text>
-        </div>
-
-        <!-- Feature 3 -->
-        <div class="bg-base-50 p-8 rounded-xl">
-          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center mb-4 text-2xl">
-            📱
-          </div>
-          <h3 class="text-xl font-bold text-base-900 mb-3">Mobile Access</h3>
-          <Text>
-            Native iOS and Android apps provide full dashboard access from anywhere on your farm or around the world.
-          </Text>
-        </div>
-
-        <!-- Feature 4 -->
-        <div class="bg-base-50 p-8 rounded-xl">
-          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center mb-4 text-2xl">
-            📈
-          </div>
-          <h3 class="text-xl font-bold text-base-900 mb-3">Historical Analysis</h3>
-          <Text>
-            Access years of historical data to identify trends, plan crop rotations, and optimize resource allocation.
-          </Text>
-        </div>
-
-        <!-- Feature 5 -->
-        <div class="bg-base-50 p-8 rounded-xl">
-          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center mb-4 text-2xl">
-            🗺️
-          </div>
-          <h3 class="text-xl font-bold text-base-900 mb-3">Field Mapping</h3>
-          <Text>
-            Visualize sensor data overlaid on satellite imagery to understand spatial variations across fields.
-          </Text>
-        </div>
-
-        <!-- Feature 6 -->
-        <div class="bg-base-50 p-8 rounded-xl">
-          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center mb-4 text-2xl">
-            📋
-          </div>
-          <h3 class="text-xl font-bold text-base-900 mb-3">Custom Reports</h3>
-          <Text>
-            Generate automated reports for compliance, insurance, or internal analysis with one-click exports.
-          </Text>
-        </div>
-      </div>
-    </Wrapper>
-  </section>
-
-  <!-- Security Features -->
-  <section class="py-20 bg-base-50">
-    <Wrapper>
-      <div class="grid lg:grid-cols-2 gap-16 items-center">
-        <div>
-          <h2 class="text-3xl lg:text-4xl font-bold text-base-900 mb-6">
-            Enterprise-Grade Security
-          </h2>
-          <Text size="lg" class="mb-8">
-            Your farm data is valuable. We protect it with the same security standards used by financial institutions.
-          </Text>
-
-          <div class="space-y-6">
-            <div class="flex gap-4 items-start">
-              <div class="flex-shrink-0 w-10 h-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center font-bold">
-                🔒
-              </div>
-              <div>
-                <h3 class="font-bold text-base-900 mb-2">End-to-End Encryption</h3>
-                <Text>All data transmitted between sensors and servers uses AES-256 encryption</Text>
-              </div>
-            </div>
-
-            <div class="flex gap-4 items-start">
-              <div class="flex-shrink-0 w-10 h-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center font-bold">
-                👤
-              </div>
-              <div>
-                <h3 class="font-bold text-base-900 mb-2">Role-Based Access</h3>
-                <Text>Grant specific permissions to employees, consultants, or partners</Text>
-              </div>
-            </div>
-
-            <div class="flex gap-4 items-start">
-              <div class="flex-shrink-0 w-10 h-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center font-bold">
-                🔐
-              </div>
-              <div>
-                <h3 class="font-bold text-base-900 mb-2">Two-Factor Authentication</h3>
-                <Text>Optional 2FA adds an extra layer of account protection</Text>
-              </div>
-            </div>
-
-            <div class="flex gap-4 items-start">
-              <div class="flex-shrink-0 w-10 h-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center font-bold">
-                ☁️
-              </div>
-              <div>
-                <h3 class="font-bold text-base-900 mb-2">Secure Cloud Storage</h3>
-                <Text>Data backed up across multiple geographic regions with 99.99% uptime SLA</Text>
-              </div>
-            </div>
-
-            <div class="flex gap-4 items-start">
-              <div class="flex-shrink-0 w-10 h-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center font-bold">
-                📜
-              </div>
-              <div>
-                <h3 class="font-bold text-base-900 mb-2">Compliance Ready</h3>
-                <Text>SOC 2 Type II certified, GDPR and CCPA compliant</Text>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-white p-8 rounded-2xl shadow-lg">
-          <h3 class="text-2xl font-bold text-base-900 mb-6">Dashboard Features</h3>
-          
-          <div class="space-y-6">
-            <div class="flex gap-4">
-              <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center font-bold">
-                ✓
-              </div>
-              <div>
-                <h4 class="font-bold text-base-900 mb-1">Customizable Widgets</h4>
-                <Text>Arrange your dashboard to show the metrics that matter most</Text>
-              </div>
-            </div>
-
-            <div class="flex gap-4">
-              <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center font-bold">
-                ✓
-              </div>
-              <div>
-                <h4 class="font-bold text-base-900 mb-1">Multi-Farm Management</h4>
-                <Text>Switch between multiple farm operations from one account</Text>
-              </div>
-            </div>
-
-            <div class="flex gap-4">
-              <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center font-bold">
-                ✓
-              </div>
-              <div>
-                <h4 class="font-bold text-base-900 mb-1">API Access</h4>
-                <Text>Integrate data with farm management software and third-party tools</Text>
-              </div>
-            </div>
-
-            <div class="flex gap-4">
-              <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center font-bold">
-                ✓
-              </div>
-              <div>
-                <h4 class="font-bold text-base-900 mb-1">Data Export</h4>
-                <Text>Download reports in CSV, PDF, or Excel format for analysis</Text>
-              </div>
-            </div>
-
-            <div class="flex gap-4">
-              <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center font-bold">
-                ✓
-              </div>
-              <div>
-                <h4 class="font-bold text-base-900 mb-1">Offline Mode</h4>
-                <Text>Mobile apps cache data for viewing even without internet connection</Text>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </Wrapper>
-  </section>
-
-  <!-- Analytics Capabilities -->
-  <section class="py-20 bg-white">
-    <Wrapper>
-      <div class="text-center mb-16">
-        <h2 class="text-3xl lg:text-5xl font-bold text-base-900 mb-4">
-          Advanced Analytics
-        </h2>
-        <Text size="lg" class="max-w-2xl mx-auto">
-          Turn data into decisions with AI-powered insights and predictive analytics.
-        </Text>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl">
-          <h3 class="text-2xl font-bold text-base-900 mb-4">Predictive Models</h3>
-          <Text class="mb-6">
-            Machine learning algorithms analyze historical patterns to forecast irrigation needs, predict disease risk, and optimize harvest timing.
-          </Text>
-          <ul class="space-y-3">
-            <li class="flex items-center gap-3">
-              <span class="text-blue-600">▸</span>
-              <Text>7-day soil moisture forecasts</Text>
-            </li>
-            <li class="flex items-center gap-3">
-              <span class="text-blue-600">▸</span>
-              <Text>Crop growth stage predictions</Text>
-            </li>
-            <li class="flex items-center gap-3">
-              <span class="text-blue-600">▸</span>
-              <Text>Pest and disease risk alerts</Text>
-            </li>
-          </ul>
-        </div>
-
-        <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl">
-          <h3 class="text-2xl font-bold text-base-900 mb-4">Benchmarking</h3>
-          <Text class="mb-6">
-            Compare your farm's performance against regional averages, historical data, and industry best practices.
-          </Text>
-          <ul class="space-y-3">
-            <li class="flex items-center gap-3">
-              <span class="text-green-600">▸</span>
-              <Text>Water efficiency comparisons</Text>
-            </li>
-            <li class="flex items-center gap-3">
-              <span class="text-green-600">▸</span>
-              <Text>Yield optimization insights</Text>
-            </li>
-            <li class="flex items-center gap-3">
-              <span class="text-green-600">▸</span>
-              <Text>Cost per acre analysis</Text>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </Wrapper>
-  </section>
-
-  <!-- Platform Stats -->
-  <section class="py-20 bg-base-50">
     <Wrapper>
       <div class="text-center mb-12">
-        <h2 class="text-3xl lg:text-5xl font-bold text-base-900 mb-4">
-          Trusted by Farmers Worldwide
-        </h2>
+        <Text tag="h2" variant="displayLG" class="font-display text-base-900 mb-4">
+          Farmers trust FarmEasy for data-driven farm management
+        </Text>
+        <Text tag="p" variant="textXL" class="text-base-600 max-w-3xl mx-auto">
+          Agricultural operations rely on FarmEasy Analytics to make informed decisions about irrigation, fertilization, pest control, and harvest timing. Our platform turns sensor data into profitable insights.
+        </Text>
       </div>
 
       <div class="grid md:grid-cols-4 gap-8">
-        <div class="text-center">
-          <div class="text-4xl font-bold text-blue-600 mb-2">500+</div>
-          <Text class="font-medium">Active farms</Text>
+        <div class="bg-base-50 p-8 rounded-xl text-center">
+          <div class="text-4xl mb-4">📊</div>
+          <Text tag="h3" variant="textXL" class="font-bold text-base-900 mb-2">
+            Real-time insights
+          </Text>
+          <Text tag="p" variant="textSM" class="text-base-600">
+            Monitor live data from soil, weather, and crop sensors instantly
+          </Text>
         </div>
-        <div class="text-center">
-          <div class="text-4xl font-bold text-blue-600 mb-2">10M+</div>
-          <Text class="font-medium">Data points daily</Text>
+
+        <div class="bg-base-50 p-8 rounded-xl text-center">
+          <div class="text-4xl mb-4">🎯</div>
+          <Text tag="h3" variant="textXL" class="font-bold text-base-900 mb-2">
+            Predictive analytics
+          </Text>
+          <Text tag="p" variant="textSM" class="text-base-600">
+            AI-powered forecasts for irrigation needs and disease risk
+          </Text>
         </div>
-        <div class="text-center">
-          <div class="text-4xl font-bold text-blue-600 mb-2">99.99%</div>
-          <Text class="font-medium">Platform uptime</Text>
+
+        <div class="bg-base-50 p-8 rounded-xl text-center">
+          <div class="text-4xl mb-4">📈</div>
+          <Text tag="h3" variant="textXL" class="font-bold text-base-900 mb-2">
+            Performance tracking
+          </Text>
+          <Text tag="p" variant="textSM" class="text-base-600">
+            Compare yields across fields, seasons, and crop varieties
+          </Text>
         </div>
-        <div class="text-center">
-          <div class="text-4xl font-bold text-blue-600 mb-2">24/7</div>
-          <Text class="font-medium">Support available</Text>
+
+        <div class="bg-base-50 p-8 rounded-xl text-center">
+          <div class="text-4xl mb-4">💰</div>
+          <Text tag="h3" variant="textXL" class="font-bold text-base-900 mb-2">
+            Cost optimization
+          </Text>
+          <Text tag="p" variant="textSM" class="text-base-600">
+            Reduce water, fertilizer, and labor costs with data insights
+          </Text>
         </div>
       </div>
     </Wrapper>
   </section>
 
-  <!-- CTA -->
-  <Cta />
+  <!-- Analytics Capabilities Section -->
+  <section class="py-20 bg-base-50">
+    <Wrapper>
+      <div class="text-center mb-16">
+        <Text tag="h2" variant="displayXL" class="font-display text-base-900 mb-6">
+          Analytics isn't just useful, it's essential
+        </Text>
+        <Text tag="p" variant="textXL" class="text-base-600 max-w-3xl mx-auto mb-8">
+          FarmEasy Analytics turns overwhelming farm data into clear, actionable insights. See what's happening across your fields in real-time, predict what's coming next, and make decisions based on evidence—not guesswork.
+        </Text>
+        <Button href="#" variant="muted" size="sm">
+          Download analytics guide
+        </Button>
+      </div>
+
+      <!-- Analytics Features Grid -->
+      <div class="grid lg:grid-cols-3 gap-12 mt-16">
+        <!-- Analytics Feature 1 -->
+        <div>
+          <div class="mb-6">
+            <img 
+              src="/attached_assets/stock_images/business_analytics_d_280db0ad.jpg" 
+              alt="Real-time data visualization"
+              class="rounded-xl w-full h-64 object-cover"
+            />
+          </div>
+          <Text tag="h3" variant="displaySM" class="font-display text-base-900 mb-4">
+            Real-time visualization, instant understanding
+          </Text>
+          <Text tag="p" variant="textLG" class="text-base-600 mb-4">
+            Watch your farm come alive with live data streams. Soil moisture, temperature, humidity, and crop health metrics update every few seconds, giving you the pulse of your operation at a glance.
+          </Text>
+          <Button href="#" variant="none" size="sm" class="text-green-600 hover:text-green-700 p-0">
+            Learn more →
+          </Button>
+        </div>
+
+        <!-- Analytics Feature 2 -->
+        <div>
+          <div class="mb-6">
+            <img 
+              src="/attached_assets/stock_images/analytics_dashboard__21df999e.jpg" 
+              alt="Predictive intelligence"
+              class="rounded-xl w-full h-64 object-cover"
+            />
+          </div>
+          <Text tag="h3" variant="displaySM" class="font-display text-base-900 mb-4">
+            Predictive intelligence that saves resources
+          </Text>
+          <Text tag="p" variant="textLG" class="text-base-600 mb-4">
+            Machine learning models analyze historical patterns and current conditions to forecast irrigation needs 7 days ahead, predict disease outbreaks before they spread, and optimize harvest timing for peak quality.
+          </Text>
+          <Button href="#" variant="none" size="sm" class="text-green-600 hover:text-green-700 p-0">
+            Learn more →
+          </Button>
+        </div>
+
+        <!-- Analytics Feature 3 -->
+        <div>
+          <div class="mb-6">
+            <img 
+              src="/attached_assets/stock_images/business_analytics_d_6be00123.jpg" 
+              alt="Custom reporting"
+              class="rounded-xl w-full h-64 object-cover"
+            />
+          </div>
+          <Text tag="h3" variant="displaySM" class="font-display text-base-900 mb-4">
+            Reports that tell your farm's story
+          </Text>
+          <Text tag="p" variant="textLG" class="text-base-600 mb-4">
+            Generate professional reports for insurance claims, sustainability certifications, investor updates, or internal planning. Export data as PDF, CSV, or Excel with one click, or schedule automated weekly summaries.
+          </Text>
+          <Button href="#" variant="none" size="sm" class="text-green-600 hover:text-green-700 p-0">
+            Learn more →
+          </Button>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+
+  <!-- Feature Section 1 - Dashboard Simplicity -->
+  <section class="py-20 bg-white">
+    <Wrapper>
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="inline-block px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium mb-6">
+            Dashboard Customization
+          </div>
+          <Text tag="h2" variant="displayLG" class="font-display text-base-900 mb-6">
+            Your farm, your dashboard, your way
+          </Text>
+          <Text tag="p" variant="textXL" class="text-base-600 mb-8">
+            Every farm is different. That's why FarmEasy Analytics lets you build custom dashboards showing exactly what matters to you. Drag-and-drop widgets, resize charts, and save multiple dashboard layouts for different roles on your team.
+          </Text>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <span class="text-green-600 text-xl">✓</span>
+              <div>
+                <Text tag="p" variant="textLG" class="font-semibold text-base-900">
+                  Customizable widgets
+                </Text>
+                <Text tag="p" variant="textBase" class="text-base-600">
+                  Choose from 50+ widget types: line charts, heat maps, gauges, field maps, weather overlays, and more
+                </Text>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-green-600 text-xl">✓</span>
+              <div>
+                <Text tag="p" variant="textLG" class="font-semibold text-base-900">
+                  Multi-field view
+                </Text>
+                <Text tag="p" variant="textBase" class="text-base-600">
+                  Compare performance across different fields, crops, or irrigation zones side-by-side
+                </Text>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-green-600 text-xl">✓</span>
+              <div>
+                <Text tag="p" variant="textLG" class="font-semibold text-base-900">
+                  Role-based dashboards
+                </Text>
+                <Text tag="p" variant="textBase" class="text-base-600">
+                  Create different views for farm managers, agronomists, equipment operators, and owners
+                </Text>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img 
+            src="/attached_assets/stock_images/analytics_dashboard__f591ff4b.jpg" 
+            alt="Dashboard customization interface"
+            class="rounded-2xl shadow-2xl w-full"
+          />
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+
+  <!-- Feature Section 2 - Historical Analysis -->
+  <section class="py-20 bg-base-50">
+    <Wrapper>
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1">
+          <img 
+            src="/attached_assets/stock_images/business_analytics_d_e1af532a.jpg" 
+            alt="Historical data analysis"
+            class="rounded-2xl shadow-2xl w-full"
+          />
+        </div>
+        <div class="order-1 lg:order-2">
+          <div class="inline-block px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-6">
+            Historical Analysis
+          </div>
+          <Text tag="h2" variant="displayLG" class="font-display text-base-900 mb-6">
+            Learn from the past, optimize the future
+          </Text>
+          <Text tag="p" variant="textXL" class="text-base-600 mb-8">
+            FarmEasy stores years of farm data so you can identify long-term trends, compare season-to-season performance, and understand what truly drives yields on your specific land. Historical analysis reveals patterns invisible in day-to-day monitoring.
+          </Text>
+          <Text tag="p" variant="textLG" class="text-base-700 mb-6">
+            See which irrigation schedules produced the best yields three years ago. Compare this season's pest pressure to historical averages. Understand exactly when to plant based on 10 years of soil temperature data.
+          </Text>
+          <Button href="#" variant="muted" size="md">
+            Explore historical tools
+          </Button>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+
+  <!-- Platform Capabilities -->
+  <section class="py-20 bg-white">
+    <Wrapper>
+      <div class="text-center mb-16">
+        <Text tag="h2" variant="displayXL" class="font-display text-base-900 mb-6">
+          FarmEasy Analytics: more than just charts
+        </Text>
+        <Text tag="p" variant="textXL" class="text-base-600 max-w-3xl mx-auto">
+          Everything you need to understand your farm operation:
+        </Text>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-base-50 p-8 rounded-xl">
+          <div class="text-4xl mb-4">🗺️</div>
+          <Text tag="h3" variant="textXL" class="font-bold text-base-900 mb-3">
+            Field Mapping
+          </Text>
+          <Text tag="p" variant="textBase" class="text-base-600">
+            Overlay sensor data on satellite imagery to see spatial variations across your fields
+          </Text>
+        </div>
+
+        <div class="bg-base-50 p-8 rounded-xl">
+          <div class="text-4xl mb-4">🔔</div>
+          <Text tag="h3" variant="textXL" class="font-bold text-base-900 mb-3">
+            Smart Alerts
+          </Text>
+          <Text tag="p" variant="textBase" class="text-base-600">
+            Get notified via SMS, email, or app when conditions require attention
+          </Text>
+        </div>
+
+        <div class="bg-base-50 p-8 rounded-xl">
+          <div class="text-4xl mb-4">📊</div>
+          <Text tag="h3" variant="textXL" class="font-bold text-base-900 mb-3">
+            Benchmarking
+          </Text>
+          <Text tag="p" variant="textBase" class="text-base-600">
+            Compare your performance against regional averages and industry best practices
+          </Text>
+        </div>
+
+        <div class="bg-base-50 p-8 rounded-xl">
+          <div class="text-4xl mb-4">📱</div>
+          <Text tag="h3" variant="textXL" class="font-bold text-base-900 mb-3">
+            Mobile Access
+          </Text>
+          <Text tag="p" variant="textBase" class="text-base-600">
+            Full-featured iOS and Android apps keep you connected from anywhere
+          </Text>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+
+  <!-- Case Study Section -->
+  <section class="py-20 bg-accent-900 text-white">
+    <Wrapper>
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <Text tag="h2" variant="displayLG" class="font-display text-white mb-6">
+            How Green Valley Orchards increased yields by 28% with analytics
+          </Text>
+          <Text tag="p" variant="textXL" class="text-green-100 mb-8">
+            See how data-driven irrigation scheduling and predictive pest management helped Green Valley Orchards achieve record harvests while reducing water usage by 35% and pesticide applications by 50%.
+          </Text>
+          <Button href="/cases" variant="accent" size="lg">
+            Read the success story
+          </Button>
+        </div>
+        <div class="bg-accent-800 rounded-2xl aspect-video flex items-center justify-center">
+          <div class="text-center">
+            <div class="text-6xl mb-4">▶</div>
+            <Text tag="p" variant="textLG" class="text-accent-400">
+              Video case study
+            </Text>
+          </div>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+
+  <!-- Integrations Section -->
+  <section class="py-20 bg-white">
+    <Wrapper>
+      <div class="text-center mb-16">
+        <Text tag="h2" variant="displayXL" class="font-display text-base-900 mb-6">
+          Connect with tools you already use
+        </Text>
+        <Text tag="p" variant="textXL" class="text-base-600 max-w-3xl mx-auto mb-8">
+          FarmEasy Analytics integrates seamlessly with precision agriculture tools, farm management software, weather services, and business applications.
+        </Text>
+        <Button href="#" variant="muted" size="md">
+          View all integrations
+        </Button>
+      </div>
+
+      <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div class="bg-base-50 p-6 rounded-xl text-center">
+          <div class="text-5xl mb-4">🌾</div>
+          <Text tag="h3" variant="textLG" class="font-bold text-base-900 mb-2">
+            John Deere Ops
+          </Text>
+          <Text tag="p" variant="textSM" class="text-base-600">
+            Sync equipment data with sensor analytics
+          </Text>
+        </div>
+
+        <div class="bg-base-50 p-6 rounded-xl text-center">
+          <div class="text-5xl mb-4">🌤️</div>
+          <Text tag="h3" variant="textLG" class="font-bold text-base-900 mb-2">
+            Weather APIs
+          </Text>
+          <Text tag="p" variant="textSM" class="text-base-600">
+            Combine sensor data with hyperlocal forecasts
+          </Text>
+        </div>
+
+        <div class="bg-base-50 p-6 rounded-xl text-center">
+          <div class="text-5xl mb-4">📊</div>
+          <Text tag="h3" variant="textLG" class="font-bold text-base-900 mb-2">
+            Excel & Sheets
+          </Text>
+          <Text tag="p" variant="textSM" class="text-base-600">
+            Export data for custom financial analysis
+          </Text>
+        </div>
+
+        <div class="bg-base-50 p-6 rounded-xl text-center">
+          <div class="text-5xl mb-4">🗺️</div>
+          <Text tag="h3" variant="textLG" class="font-bold text-base-900 mb-2">
+            Climate FieldView
+          </Text>
+          <Text tag="p" variant="textSM" class="text-base-600">
+            Integrate with precision ag mapping platforms
+          </Text>
+        </div>
+
+        <div class="bg-base-50 p-6 rounded-xl text-center">
+          <div class="text-5xl mb-4">📧</div>
+          <Text tag="h3" variant="textLG" class="font-bold text-base-900 mb-2">
+            Email & Slack
+          </Text>
+          <Text tag="p" variant="textSM" class="text-base-600">
+            Receive automated reports and alerts
+          </Text>
+        </div>
+
+        <div class="bg-base-50 p-6 rounded-xl text-center">
+          <div class="text-5xl mb-4">💼</div>
+          <Text tag="h3" variant="textLG" class="font-bold text-base-900 mb-2">
+            QuickBooks
+          </Text>
+          <Text tag="p" variant="textSM" class="text-base-600">
+            Link crop performance to financial metrics
+          </Text>
+        </div>
+
+        <div class="bg-base-50 p-6 rounded-xl text-center">
+          <div class="text-5xl mb-4">🔌</div>
+          <Text tag="h3" variant="textLG" class="font-bold text-base-900 mb-2">
+            REST API
+          </Text>
+          <Text tag="p" variant="textSM" class="text-base-600">
+            Build custom integrations with full API access
+          </Text>
+        </div>
+
+        <div class="bg-base-50 p-6 rounded-xl text-center">
+          <div class="text-5xl mb-4">☁️</div>
+          <Text tag="h3" variant="textLG" class="font-bold text-base-900 mb-2">
+            Cloud Storage
+          </Text>
+          <Text tag="p" variant="textSM" class="text-base-600">
+            Auto-backup reports to Dropbox or Google Drive
+          </Text>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+
+  <!-- ROI/Benefits Section -->
+  <section class="py-20 bg-base-50">
+    <Wrapper>
+      <div class="text-center mb-16">
+        <Text tag="h2" variant="displayXL" class="font-display text-base-900 mb-6">
+          The measurable impact of analytics
+        </Text>
+        <Text tag="p" variant="textXL" class="text-base-600 max-w-3xl mx-auto mb-8">
+          FarmEasy Analytics customers report significant improvements in operational efficiency, resource conservation, and profitability within the first growing season.
+        </Text>
+        <Button href="#" variant="muted" size="md">
+          Download ROI calculator
+        </Button>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white p-8 rounded-xl text-center">
+          <div class="text-5xl mb-4">💧</div>
+          <Text tag="h3" variant="displaySM" class="font-display text-base-900 mb-3">
+            35% water savings
+          </Text>
+          <Text tag="p" variant="textBase" class="text-base-600">
+            Average reduction in irrigation water through precision scheduling
+          </Text>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl text-center">
+          <div class="text-5xl mb-4">🌾</div>
+          <Text tag="h3" variant="displaySM" class="font-display text-base-900 mb-3">
+            18% yield increase
+          </Text>
+          <Text tag="p" variant="textBase" class="text-base-600">
+            Average crop yield improvement from optimized growing conditions
+          </Text>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl text-center">
+          <div class="text-5xl mb-4">⏱️</div>
+          <Text tag="h3" variant="displaySM" class="font-display text-base-900 mb-3">
+            12 hours saved weekly
+          </Text>
+          <Text tag="p" variant="textBase" class="text-base-600">
+            Time saved on manual monitoring and record-keeping tasks
+          </Text>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl text-center">
+          <div class="text-5xl mb-4">💰</div>
+          <Text tag="h3" variant="displaySM" class="font-display text-base-900 mb-3">
+            $45K average savings
+          </Text>
+          <Text tag="p" variant="textBase" class="text-base-600">
+            Annual cost reduction from optimized resource usage
+          </Text>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-20 bg-white">
+    <Wrapper>
+      <div class="text-center mb-16">
+        <Text tag="h2" variant="displayXL" class="font-display text-base-900 mb-6">
+          Trusted by farmers worldwide
+        </Text>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-base-50 p-8 rounded-xl">
+          <div class="text-4xl mb-4">⭐⭐⭐⭐⭐</div>
+          <Text tag="p" variant="textLG" class="text-base-700 mb-6 italic">
+            "The predictive irrigation feature alone paid for itself in the first season. We cut water costs by 40% and saw our best corn yields in a decade."
+          </Text>
+          <Text tag="p" variant="textSM" class="font-bold text-base-900">
+            Tom Henderson
+          </Text>
+          <Text tag="p" variant="textXS" class="text-base-600">
+            Owner, Henderson Family Farms (850 acres)
+          </Text>
+        </div>
+
+        <div class="bg-base-50 p-8 rounded-xl">
+          <div class="text-4xl mb-4">⭐⭐⭐⭐⭐</div>
+          <Text tag="p" variant="textLG" class="text-base-700 mb-6 italic">
+            "Being able to see soil moisture across all 12 fields on one screen changed how we manage irrigation. No more driving around checking each field twice a day."
+          </Text>
+          <Text tag="p" variant="textSM" class="font-bold text-base-900">
+            Maria Rodriguez
+          </Text>
+          <Text tag="p" variant="textXS" class="text-base-600">
+            Farm Manager, Valley Vista Vineyards
+          </Text>
+        </div>
+
+        <div class="bg-base-50 p-8 rounded-xl">
+          <div class="text-4xl mb-4">⭐⭐⭐⭐⭐</div>
+          <Text tag="p" variant="textLG" class="text-base-700 mb-6 italic">
+            "The historical analysis helped us understand why certain fields underperformed. We adjusted our rotation based on 5 years of data and yields jumped 22%."
+          </Text>
+          <Text tag="p" variant="textSM" class="font-bold text-base-900">
+            David Chen
+          </Text>
+          <Text tag="p" variant="textXS" class="text-base-600">
+            Operations Director, Sunrise Organics
+          </Text>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="py-20 bg-green-900 text-white">
+    <Wrapper>
+      <div class="text-center mb-16">
+        <Text tag="h2" variant="displayXL" class="font-display text-white mb-4">
+          Analytics that scales with your operation
+        </Text>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div class="text-center">
+          <Text tag="p" variant="displayLG" class="font-display text-green-400 mb-3">
+            2,500+
+          </Text>
+          <Text tag="p" variant="textLG" class="text-white">
+            Farms using FarmEasy Analytics platform
+          </Text>
+        </div>
+
+        <div class="text-center">
+          <Text tag="p" variant="displayLG" class="font-display text-green-400 mb-3">
+            50M+
+          </Text>
+          <Text tag="p" variant="textLG" class="text-white">
+            Data points processed every single day
+          </Text>
+        </div>
+
+        <div class="text-center">
+          <Text tag="p" variant="displayLG" class="font-display text-green-400 mb-3">
+            99.9%
+          </Text>
+          <Text tag="p" variant="textLG" class="text-white">
+            Platform uptime—your data when you need it
+          </Text>
+        </div>
+
+        <div class="text-center">
+          <Text tag="p" variant="displayLG" class="font-display text-green-400 mb-3">
+            24/7
+          </Text>
+          <Text tag="p" variant="textLG" class="text-white">
+            Customer support for enterprise customers
+          </Text>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-32 bg-gradient-to-b from-green-50 to-white">
+    <Wrapper>
+      <div class="text-center max-w-3xl mx-auto">
+        <Text tag="h2" variant="displayXL" class="font-display text-base-900 mb-6">
+          Start making data-driven decisions today
+        </Text>
+        <Text tag="p" variant="textXL" class="text-base-600 mb-12">
+          Join thousands of farmers using FarmEasy Analytics to optimize yields, conserve resources, and increase profitability
+        </Text>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <Button href="/contact" variant="accent" size="lg">
+            Contact Sales
+          </Button>
+          <Button href="/buy-iot-hub" variant="muted" size="lg">
+            Start Free Trial
+          </Button>
+        </div>
+      </div>
+    </Wrapper>
+  </section>
 </BaseLayout>

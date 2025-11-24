@@ -1,48 +1,53 @@
 ---
 name: David Kim
-title: Senior Paralegal
-bio: Experienced legal professional providing comprehensive support across multiple practice areas.
-experience: 12 years in legal support roles, specializing in litigation and corporate transactions.
+title: Senior Data Scientist
+bio: Machine learning expert developing predictive models for agricultural decision-making.
+experience: 10 years building AI systems for agriculture, including yield prediction, disease detection, and irrigation optimization.
 education:
-  - Paralegal Certificate, George Washington University
-  - B.A., Business Administration, University of Maryland
-barAdmissions: []
+  - Ph.D., Computer Science (Machine Learning), MIT
+  - M.S., Statistics, Stanford University
+  - B.S., Mathematics & Computer Science, UC Berkeley
+certifications:
+  - AWS Certified Machine Learning Specialty
+  - TensorFlow Developer Certificate
 specialties:
-  - Legal Research and Writing
-  - Case Management
-  - Document Production
-  - Client Communication
+  - Agricultural AI & Machine Learning
+  - Predictive Analytics
+  - Computer Vision for Crop Monitoring
+  - Time Series Forecasting
 image:
   url: "/src/images/team/david-kim.jpg"
   alt: David Kim portrait
 contact:
-  email: david@lexfordlaw.com
-  phone: +1 (202) 555-0321
-  location: Washington, DC Office
+  email: david@farmeasy.ag
+  phone: +1 (916) 555-0321
+  location: Sacramento Office
 socials:
   linkedin: "#_"
 
 ---
 
-David Kim is a senior paralegal with extensive experience supporting attorneys across multiple practice areas. His attention to detail and organizational skills make him an invaluable member of our legal team.
+David Kim is a senior data scientist specializing in machine learning applications for agriculture. His algorithms help farmers predict crop yields, detect diseases early, and optimize resource allocation based on historical patterns and real-time sensor data.
 
-## Support Expertise
+## AI for Agriculture
 
-David manages complex case files, conducts legal research, and prepares comprehensive document productions. His ability to anticipate attorney needs and maintain strict confidentiality has earned him the trust of our clients.
+David's work transforms raw farm data into predictive insights. His models analyze years of sensor readings, weather patterns, and crop performance to forecast outcomes and recommend optimal farming practices.
 
-## Technical Skills
+## Technical Expertise
 
-- Advanced proficiency in legal research databases (Westlaw, LexisNexis)
-- Expert in e-discovery and document management systems
-- Experienced with case management software and CRM systems
-- Proficient in multiple foreign languages for international matters
+- Deep learning for satellite and drone imagery analysis
+- Ensemble models for yield forecasting (92% accuracy)
+- Natural language processing for agricultural knowledge extraction
+- Real-time anomaly detection in sensor streams
+- Edge computing optimization for farm deployments
 
-## Professional Development
+## Research Contributions
 
-- Certified Paralegal (NALA)
-- Regular participant in continuing legal education programs
-- Mentor for junior paralegals and legal assistants
+- Published 8 papers on agricultural machine learning
+- Developed open-source tools for farm data analysis
+- Presented at NeurIPS Workshop on AI for Agriculture
+- Patent holder for crop disease prediction system
 
-## Beyond the Office
+## Beyond Data Science
 
-David is passionate about legal access and volunteers with organizations providing free legal services to underserved communities.
+David is passionate about making AI accessible to farmers and regularly conducts workshops explaining machine learning concepts in practical, non-technical terms.

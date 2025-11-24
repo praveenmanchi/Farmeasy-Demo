@@ -1,66 +1,56 @@
 ---
-title: Intellectual Property Paralegal
-location: Remote / Los Angeles, CA
+title: Field Service Technician
+location: Remote / Sacramento, CA
 type: Full-time
-remote: Hybrid
+remote: Field-based
 postedDate: 2025-10-05
 salary: $65,000 - $75,000
-description: Support IP attorneys with patent, trademark, and copyright matters.
+description: Install, maintain, and repair precision agriculture sensors and equipment at customer farm sites.
 responsibilities:
-  - Prepare and file patent applications
-  - Conduct trademark searches and filings
-  - Maintain IP docket and deadlines
-  - Assist with due diligence reviews
-  - Draft correspondence and agreements
+  - Install sensor systems including soil probes, weather stations, and gateways
+  - Troubleshoot hardware issues and perform equipment repairs
+  - Conduct preventive maintenance visits
+  - Train farmers on basic equipment operation
+  - Document installations and maintain accurate service records
 requirements:
-  - 3+ years IP paralegal experience
-  - Knowledge of USPTO procedures
-  - Strong organizational skills
-  - Bachelor's degree preferred
+  - 3+ years experience in electronics, instrumentation, or agricultural equipment
+  - Strong troubleshooting and problem-solving skills
+  - Comfortable working outdoors in all weather conditions
+  - Valid driver's license and clean driving record
 benefits:
   - Medical and dental coverage
-  - 401(k) plan
-  - Professional development
-  - Flexible scheduling
-  - Team building events
+  - 401(k) plan with match
+  - Company truck, tools, and equipment provided
+  - Paid training and certifications
+  - Overtime pay for after-hours emergency support
 applyUrl: "#_"
-applyEmail: careers@lexfordlaw.com
+applyEmail: careers@farmeasy.ag
 tags:
-  - Intellectual Property
-  - Paralegal
-  - Administrative
+  - Field Service
+  - Installation
+  - Technical Support
 ---
 
-# Intellectual Property Paralegal
+# Field Service Technician
 
-Support Carrington Law’s IP practice by assisting attorneys with patent, trademark, and copyright matters. You’ll play a key role in protecting client innovations and brands.
+Support FarmEasy customers by installing and maintaining IoT sensor networks on farms across your region. This hands-on role combines electronics expertise with agricultural work, helping farmers optimize their operations through technology.
 
 ## Responsibilities
 
-- Prepare and file IP applications and documents
-- Conduct research on patents, trademarks, and copyrights
-- Manage deadlines and maintain case files
-- Communicate with clients and government agencies
+- Travel to farm sites to install complete sensor systems (50-80% travel)
+- Diagnose and repair equipment failures in field environments
+- Perform seasonal maintenance checks and sensor calibrations
+- Provide basic technical training to farmers and farm staff
+- Maintain detailed service documentation and inventory
 
 ## Qualifications
 
-- Bachelor’s degree or paralegal certificate
-- 2+ years of IP law experience preferred
-- Detail-oriented with strong organizational skills
-- Excellent written and verbal communication
+- Technical certification or equivalent hands-on experience in electronics, instrumentation, or agricultural equipment
+- 2+ years field service, installation, or equipment repair experience
+- Ability to work independently and manage your own schedule
+- Comfortable with hand and power tools
+- Strong customer service skills
 
 ## Benefits
 
-Flexible work arrangements, ongoing training, and a supportive team. Grow your career in intellectual property with Farm Easy
-
-## IP Practice Support
-
-Join our intellectual property team as a paralegal supporting patent, trademark, and copyright matters. This role offers exposure to cutting-edge technology and creative works.
-
-## USPTO Expertise
-
-Work directly with patent examiners and trademark officials, managing complex filings and maintaining strict deadlines in a fast-paced environment.
-
-## Growth Opportunities
-
-Paralegals in our firm have clear paths for advancement, with opportunities to specialize in specific IP areas and take on more complex responsibilities.
+Stable, year-round employment with a growing agtech company. Company vehicle, tools, and comprehensive training provided. Work outdoors, solve real problems, and help farmers succeed. Competitive pay with overtime opportunities during peak seasons.

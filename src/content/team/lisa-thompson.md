@@ -1,51 +1,52 @@
 ---
 name: Lisa Thompson
-title: Criminal Defense Associate
-bio: Dedicated criminal defense attorney committed to protecting constitutional rights and achieving justice.
-experience: 6 years defending clients in federal and state criminal matters with a focus on white-collar crime.
+title: Chief Agronomist
+bio: Certified crop advisor and soil science expert dedicated to helping farmers optimize yields through data-driven agronomy.
+experience: 12 years providing agronomic consulting and developing precision agriculture recommendations for diverse crop systems.
 education:
-  - J.D., Harvard Law School
-  - B.A., Criminal Justice, University of Virginia
-barAdmissions:
-  - Massachusetts
-  - U.S. District Court (District of Massachusetts)
-  - U.S. Court of Appeals (1st Circuit)
+  - Ph.D., Soil Science, University of California, Davis
+  - M.S., Agronomy, Purdue University
+  - B.S., Plant Sciences, Iowa State University
+certifications:
+  - Certified Crop Advisor (CCA)
+  - Certified Professional Agronomist (CPAg)
+  - Nutrient Management Specialist
 specialties:
-  - White-Collar Crime Defense
-  - Federal Criminal Trials
-  - Appeals and Post-Conviction Relief
-  - Constitutional Law
+  - Precision Nutrient Management
+  - Soil Health Assessment
+  - Irrigation Scheduling
+  - Crop Health Diagnostics
 image:
   url: "/src/images/team/lisa-thompson.jpg"
   alt: Lisa Thompson portrait
 contact:
-  email: lisa@lexfordlaw.com
-  phone: +1 (617) 555-0654
-  location: Boston Office
+  email: lisa@farmeasy.ag
+  phone: +1 (916) 555-0654
+  location: Sacramento Office
 socials:
   linkedin: "#_"
 
 ---
 
-Lisa Thompson is a passionate criminal defense attorney who believes in the fundamental principle that everyone deserves vigorous representation. Her work focuses on protecting constitutional rights and achieving just outcomes.
+Lisa Thompson is FarmEasy's lead agronomist, bringing deep expertise in translating sensor data into actionable farming recommendations. Her work focuses on helping farmers understand what their data means and how to use it for better crop outcomes.
 
-## Defense Philosophy
+## Agronomic Philosophy
 
-Lisa approaches each case with dedication to uncovering the truth and ensuring her clients receive fair treatment under the law. She has particular expertise in complex white-collar criminal matters.
+Lisa approaches each farm as a unique ecosystem, combining soil science, plant physiology, and environmental data to create customized management plans. She has particular expertise in irrigated specialty crops and sustainable nutrient management.
 
-## Notable Cases
+## Notable Achievements
 
-- Successfully defended executive in federal securities fraud prosecution
-- Obtained dismissal of charges in multi-defendant conspiracy case
-- Won appeal resulting in reduced sentence for non-violent offender
+- Developed fertilizer recommendation algorithms now used across 5,000+ acres
+- Published research on sensor-based irrigation scheduling in top agricultural journals
+- Reduced nitrogen application rates by 20% while maintaining yields for almond growers
 
-## Legal Scholarship
+## Agricultural Research
 
-Lisa has published articles on criminal justice reform and constitutional issues, and frequently speaks at legal conferences on topics related to due process and fair trial rights.
+Lisa has published over 15 peer-reviewed articles on precision agriculture and soil health, and regularly presents at agricultural conferences on topics related to data-driven crop management.
 
 ## Professional Involvement
 
-- Massachusetts Association of Criminal Defense Lawyers
-- ACLU Criminal Justice Reform Committee
-- Pro bono representation for indigent defendants
-- Clinical instructor for criminal defense clinic
+- American Society of Agronomy
+- Soil Science Society of America
+- California Certified Crop Advisers Conference Planning Committee
+- Adjunct faculty at UC Davis Department of Plant Sciences

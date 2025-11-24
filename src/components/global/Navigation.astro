@@ -39,7 +39,6 @@ const primaryShortcuts = [
   { label: "Smart Sensor", href: "/products/smart-sensor-monitoring" },
   { label: "Off-grid Nodes", href: "/products/off-grid-solar-nodes" },
   { label: "Analytics", href: "/products/secure-dashboards" },
-  { label: "Contact", href: "/contact" },
 ];
 ---
 
@@ -58,7 +57,6 @@ const primaryShortcuts = [
         />
       </a>
       <div class="hidden lg:flex items-center gap-6">
-        <MegaMenu inverted={isTransparent} />
         <div class="flex items-center gap-6">
           {
             primaryShortcuts.map((l) => (
@@ -72,8 +70,16 @@ const primaryShortcuts = [
             ))
           }
         </div>
+        <MegaMenu inverted={isTransparent} />
+        <a
+          href="/contact"
+          class={`text-sm ${isTransparent ? "text-white" : "text-base-800"}`}
+          data-primary-link
+        >
+          Contact
+        </a>
       </div>
-      <div class="hidden lg:flex gap-2 items-center">
+      <div class="hidden lg:flex gap-1 items-center">
         <Search />
         <Button
           isLink={true}
