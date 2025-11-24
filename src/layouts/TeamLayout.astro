@@ -11,6 +11,12 @@ import Twitter from "@/components/fundations/icons/Twitter.astro";
 import Linkedin from "@/components/fundations/icons/Linkedin.astro";
 // Content
 const { frontmatter } = Astro.props;
+
+// Handle optional arrays with fallbacks
+const specialties = frontmatter.specialties || [];
+const education = frontmatter.education || [];
+const barAdmissions = frontmatter.barAdmissions || frontmatter.certifications || [];
+const socials = frontmatter.socials || {};
 ---
 
 <BaseLayout>
@@ -46,60 +52,66 @@ const { frontmatter } = Astro.props;
                 >{frontmatter.experience}</Text
               >
             </div>
-            <div class="mt-8">
-              <Text
-                tag="h2"
-                variant="textBase"
-                class="text-accent-800 font-medium">Practice Areas</Text
-              >
-              <div class="flex flex-col gap-2 mt-2 text-accent-700 text-xs">
-                {
-                  frontmatter.specialties.map((specialty) => (
-                    <Text tag="p" variant="textXS" class="text-base-700">
-                      {specialty}
-                    </Text>
-                  ))
-                }
+            {specialties.length > 0 && (
+              <div class="mt-8">
+                <Text
+                  tag="h2"
+                  variant="textBase"
+                  class="text-accent-800 font-medium">Practice Areas</Text
+                >
+                <div class="flex flex-col gap-2 mt-2 text-accent-700 text-xs">
+                  {
+                    specialties.map((specialty) => (
+                      <Text tag="p" variant="textXS" class="text-base-700">
+                        {specialty}
+                      </Text>
+                    ))
+                  }
+                </div>
               </div>
-            </div>
-            <div class="mt-8">
-              <Text
-                tag="h2"
-                variant="textBase"
-                class="text-accent-800 font-medium">Education</Text
-              >
-              <ul class="list-none space-y-2 text-base-700 mt-4">
-                {
-                  frontmatter.education.map((edu) => (
-                    <li>
-                      <Text tag="p" variant="textXS" class="text-base-700">
-                        {edu}
-                      </Text>
-                    </li>
-                  ))
-                }
-              </ul>
-            </div>
-            <div class="mt-8">
-              <Text
-                tag="h2"
-                variant="textBase"
-                class="text-accent-800 font-medium"
-              >
-                Bar Admissions
-              </Text>
-              <ul class="list-none space-y-2 text-base-700 mt-4">
-                {
-                  frontmatter.barAdmissions.map((bar) => (
-                    <li>
-                      <Text tag="p" variant="textXS" class="text-base-700">
-                        {bar}
-                      </Text>
-                    </li>
-                  ))
-                }
-              </ul>
-            </div>
+            )}
+            {education.length > 0 && (
+              <div class="mt-8">
+                <Text
+                  tag="h2"
+                  variant="textBase"
+                  class="text-accent-800 font-medium">Education</Text
+                >
+                <ul class="list-none space-y-2 text-base-700 mt-4">
+                  {
+                    education.map((edu) => (
+                      <li>
+                        <Text tag="p" variant="textXS" class="text-base-700">
+                          {edu}
+                        </Text>
+                      </li>
+                    ))
+                  }
+                </ul>
+              </div>
+            )}
+            {barAdmissions.length > 0 && (
+              <div class="mt-8">
+                <Text
+                  tag="h2"
+                  variant="textBase"
+                  class="text-accent-800 font-medium"
+                >
+                  {frontmatter.certifications ? 'Certifications' : 'Bar Admissions'}
+                </Text>
+                <ul class="list-none space-y-2 text-base-700 mt-4">
+                  {
+                    barAdmissions.map((bar) => (
+                      <li>
+                        <Text tag="p" variant="textXS" class="text-base-700">
+                          {bar}
+                        </Text>
+                      </li>
+                    ))
+                  }
+                </ul>
+              </div>
+            )}
             <div
               class="flex flex-col gap-2 text-xs text-base-600 mt-4 pt-4 border-t border-base-200"
             >
@@ -113,36 +125,44 @@ const { frontmatter } = Astro.props;
               <span class="block">{frontmatter.contact.location}</span>
             </div>
           </div>
-          <div class="mt-12">
-            <Text tag="h3" variant="textSM" class="font-medium text-accent-800"
-              >Connect</Text
-            >
-            <div
-              class="mt-2 pt-2 border-t border-base-100 flex flex-wrap gap-2 text-secondary-500"
-            >
-              <a
-                href={frontmatter.socials.linkedin}
-                target="_blank"
-                class="hover:text-accent-800"
+          {(socials.linkedin || socials.twitter || socials.website) && (
+            <div class="mt-12">
+              <Text tag="h3" variant="textSM" class="font-medium text-accent-800"
+                >Connect</Text
               >
-                <Linkedin class="size-6" />
-              </a>
-              <a
-                href={frontmatter.socials.twitter}
-                target="_blank"
-                class="hover:text-accent-800"
+              <div
+                class="mt-2 pt-2 border-t border-base-100 flex flex-wrap gap-2 text-secondary-500"
               >
-                <Twitter class="size-6" />
-              </a>
-              <a
-                href={frontmatter.socials.website}
-                target="_blank"
-                class="hover:text-accent-800"
-              >
-                <LinkIcon class="size-6" />
-              </a>
+                {socials.linkedin && (
+                  <a
+                    href={socials.linkedin}
+                    target="_blank"
+                    class="hover:text-accent-800"
+                  >
+                    <Linkedin class="size-6" />
+                  </a>
+                )}
+                {socials.twitter && (
+                  <a
+                    href={socials.twitter}
+                    target="_blank"
+                    class="hover:text-accent-800"
+                  >
+                    <Twitter class="size-6" />
+                  </a>
+                )}
+                {socials.website && (
+                  <a
+                    href={socials.website}
+                    target="_blank"
+                    class="hover:text-accent-800"
+                  >
+                    <LinkIcon class="size-6" />
+                  </a>
+                )}
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
       <Wrapper variant="prose" class="max-w-xl mx-auto mt-12">
