@@ -31,6 +31,9 @@ const teamByNameSlug = Object.fromEntries(
 );
 const resolveAttorney = (id: string) =>
   teamBySlug[id] || teamByNameSlug[id] || null;
+
+// Use 'experts' field instead of 'attorneys', with fallback to empty array
+const teamMembers = frontmatter.experts || frontmatter.attorneys || [];
 ---
 
 <BaseLayout navTransparent={true}>
@@ -185,7 +188,7 @@ const resolveAttorney = (id: string) =>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12 lg:mt-24">
           {
-            frontmatter.attorneys.map((id) => {
+            teamMembers.map((id) => {
               const atty = resolveAttorney(id);
               if (!atty) {
                 return (
